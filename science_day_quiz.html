@@ -1,0 +1,2447 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" prefix="dc: http://purl.org/dc/elements/1.1/">
+<head><meta name="author" content="Created with Hot Potatoes by Half-Baked Software, registered to Devojyoti."/><meta name="keywords" content="Hot Potatoes, Hot Potatoes, Half-Baked Software, Windows, University of Victoria" /><meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<meta name="dc:creator" content="Devojyoti" />
+
+
+
+<title>
+
+</title>
+
+<!-- Made with executable version 7.0 Release 3 Build 0 -->
+
+<!-- The following insertion allows you to add your own code directly to this head tag from the configuration screen -->
+
+
+
+<style>
+
+
+/* This is the CSS stylesheet used in the exercise. */
+/* Elements in square brackets are replaced by data based on configuration settings when the exercise is built. */
+
+/* BeginCorePageCSS */
+
+/* Made with executable version 7.0 Release 3 Build 0 */
+
+
+
+/* CSS variables for colours. */
+:root{
+	--strFontFace:       Arial;
+	--strFontSize:       20px;
+	--strTextColor:      #000000;
+	--strTitleColor:     #000000;
+
+	--strFuncLightColor: #dfdfdf;
+	--strFuncShadeColor: #606060;
+	--strLinkColor:      #0000FF;
+	--strVLinkColor:     #0000CC;
+	
+	--strNavBarColor:    #f3ce4e;
+	--strNavLightColor:  #f9e6a6;
+	--strNavShadeColor:  #796727;
+	--strNavTextColor:   #000000;
+	
+	--strPageBGColor:    #BED1F8 ;
+	--strExBGColor:      #DCDFE6 ;
+	--form-control-color: rebeccapurple;
+}
+
+input[type="radio"] {
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #555555;
+	border-radius: 100%;
+	background-clip: content-box;
+	padding: 3px;
+}
+
+input[type="radio"]:checked {
+	background-color: #555555;
+}
+
+
+body{
+	font-family: var(--strFontFace);
+	background-color: var(--strPageBGColor);
+	color: var(--strTextColor);
+	background-image: url(http://www.ncra.tifr.res.in/ncra/ncra/picture-gallery/gmrt-campus-khodad/gmrt-dishes/sunrise-at-gmrt.jpg/@@images/image/large); 
+	margin-right: 0%;
+	margin-left: 0%;
+	font-size: var(--strFontSize);
+	padding-bottom: 0.0em;
+	 background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+}
+
+
+p{
+	text-align: left;
+	margin: 0px;
+	font-size: 1em;
+}
+
+table,div,span,td{
+	font-size: 1em;
+	color: var(--strTextColor);
+}
+
+div.Titles{
+	padding: 0.5em;;
+	text-align: center;
+	color: var(--strTitleColor);
+}
+
+button{
+	font-family: var(--strFontFace);
+	font-size: 1em;
+	display: inline;
+}
+
+.ExerciseTitle{
+	font-size: 140%;
+	color: var(--strTitleColor);
+}
+
+.ExerciseSubtitle{
+	font-size: 80%;
+	color: #D7EC03;
+}
+
+div.StdDiv, div.ExerciseContainer, div.ReadingContainer{
+	background-color: var(--strExBGColor);
+	text-align: center;
+	font-size: 1em;
+	color: var(--strTextColor);
+	padding: 0.5em;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: var(--strTextColor);
+	margin-bottom: 1px;
+	opacity: 0.7;
+	font-size: 23px;
+}
+
+div.ReadingContainer, div.ExerciseContainer{
+	min-width: 15em;
+	flex-grow: 1;
+	flex-basis: 0;
+	margin: 1px;
+}
+
+div#ContainerDiv{
+	margin: -1px;
+	padding: 0;
+	border: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+/* EndCorePageCSS */
+
+.RTLText{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", var(--strFontFace); 
+}
+
+.CentredRTLText{
+	text-align: center;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", var(--strFontFace); 
+}
+
+button p.RTLText{
+	text-align: center;
+}
+
+.RTLGapBox{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Times New Roman", var(--strFontFace);
+}
+
+.Guess{
+	font-weight: bold;
+}
+
+.CorrectAnswer{
+	font-weight: bold;
+}
+
+div#Timer{
+	padding: 0.25em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: var(--strTitleColor);
+}
+
+span#TimerText{
+	padding: 0.25em;
+	border-width: 1px;
+	border-style: solid;
+	font-weight: bold;
+	display: none;
+	color: var(--strTitleColor);
+}
+
+span.Instructions{
+
+}
+
+div.ExerciseText{
+
+}
+
+.FeedbackText, .FeedbackText span.CorrectAnswer, .FeedbackText span.Guess, .FeedbackText span.Answer{
+	color: var(--strTitleColor);
+}
+
+.LeftItem{
+	font-size: 1em;
+	color: var(--strTextColor);
+	text-align: left;
+}
+
+.RightItem{
+	font-weight: bold;
+	font-size: 1em;
+	color: var(--strTextColor);
+	text-align: left;
+}
+
+span.CorrectMark{
+
+}
+
+input, textarea{
+	font-family: var(--strFontFace);
+	font-size: 120%;
+}
+
+select{
+	font-size: 1em;
+}
+
+div.Feedback {
+	background-color: var(--strPageBGColor);
+	left: 33%;
+	width: 34%;
+	top: 33%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+	text-align: center;
+	color: var(--strTitleColor);
+	position: absolute;
+	display: none;
+	font-size: 1em;
+}
+
+div.TimeOutback{
+	background-color: var(--strPageBGColor);
+	left: 33%;
+	width: 34%;
+	top: 33%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+	text-align: center;
+	color: var(--strTitleColor);
+	position: absolute;
+	display: none;
+	font-size: 1em;
+}
+
+
+
+div.ExerciseDiv{
+	color: var(--strTextColor);
+}
+
+/* JMatch standard output table. */
+table.MatchTable{
+	margin: 2em auto; 
+	border-width: 0;
+}
+
+/* JMatch flashcard styles */
+table.FlashcardTable{
+	background-color: transparent;
+	color: var(--strTextColor);
+	border-color: var(--strTextColor);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	/*width: 90%;*/
+	position: relative;
+	text-align: center;
+	padding: 0px;
+}
+
+table.FlashcardTable tr{
+	border-style: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: var(--strExBGColor);
+}
+
+table.FlashcardTable td.Showing{
+	font-size: 140%;
+	text-align: center;
+	width: 50%;
+	display: table-cell;
+	padding: 2em;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 0.5em;
+	color: var(--strTextColor);
+	box-shadow: 0.2em 0.3em 0.2em var(--strNavShadeColor);
+	background-color: var(--strPageBGColor);
+}
+
+table.FlashcardTable td.Hidden{
+	display: none;
+}
+
+/* JMix styles */
+div.JMixDrag, div.JMatchDrag{
+	padding: 0;
+	background-color: var(--strPageBGColor);
+	border-style: none;
+}
+
+div#GuessDiv{
+	padding: 0.5em;
+	margin-bottom: 2em;
+}
+
+div#SegmentDiv{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+a.ExSegment{
+	font-size: 120%;
+	font-weight: bold;
+	text-decoration: none;
+	color: var(--strTextColor);
+	display: inline-block;
+	padding: 0.5em;
+	border: solid 1pt gray;
+	margin-bottom: 0.5em;
+}
+
+span.RemainingWordList{
+	font-style: italic;
+}
+
+div.DropLine {
+	position: absolute;
+	text-align: left;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: var(--strTitleColor);
+	width: 80%;
+	left: 10%;
+}
+
+/* JCloze styles */
+
+.ClozeWordList{
+	text-align: center;
+	font-weight: bold;
+}
+
+div.ClozeBody{
+	text-align: left;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	line-height: 2.0
+}
+
+span.GapSpan{
+	font-weight: bold;
+}
+
+/* JCross styles */
+
+table.CrosswordGrid{
+	margin: auto auto 1em auto;
+	border-collapse: collapse;
+	padding: 0px;
+	background-color: #000000;
+}
+
+table.CrosswordGrid tbody tr td{
+	width: 1.5em;
+	height: 1.5em;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 140%;
+	padding: 1px;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	color: #000000;
+}
+
+table.CrosswordGrid span{
+	color: #000000;
+}
+
+table.CrosswordGrid td.BlankCell{
+	background-color: #000000;
+	color: #000000;
+}
+
+table.CrosswordGrid td.LetterOnlyCell{
+	text-align: center;
+	vertical-align: middle;
+	background-color: #ffffff;
+	color: #000000;
+	font-weight: bold;
+}
+
+table.CrosswordGrid td.NumLetterCell{
+	text-align: left;
+	vertical-align: top;
+	background-color: #ffffff;
+	color: #000000;
+	padding: 1px;
+	font-weight: bold;
+}
+
+.NumLetterCellText{
+	cursor: pointer;
+	color: #000000;
+}
+
+.GridNum{
+	vertical-align: super;
+	font-size: 66%;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+.GridNum:hover, .GridNum:visited{
+	color: #000000;
+}
+
+table#Clues{
+	margin: auto;
+	vertical-align: top;
+}
+
+table#Clues td{
+	vertical-align: top;
+}
+
+table.ClueList{
+  margin: auto;
+}
+
+td.ClueNum{
+	text-align: right;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+td.Clue{
+	text-align: left;
+}
+
+div#ClueEntry{
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+/* Keypad styles */
+
+div.Keypad{
+	text-align: center;
+	display: none; /* initially hidden, shown if needed */
+	margin-bottom: 0.5em;
+}
+
+div.Keypad button{
+	font-family: var(--strFontFace);
+	font-size: 120%;
+	background-color: #ffffff;
+	color: #000000;
+	width: 2em;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 0.5em;
+	color: var(--strTextColor);
+	box-shadow: 0.2em 0.3em 0.2em var(--strTextColor);
+}
+
+/* JQuiz styles */
+
+
+div.QuestionNavigation{
+	text-align: center;
+}
+
+.QNum{
+	margin: 0em 1em 0.5em 1em;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+textarea{
+	font-family: var(--strFontFace);
+}
+
+.QuestionText{
+	text-align: left;
+	margin: 0px;
+	font-size: 1em;
+}
+
+.Answer{
+	font-size: 120%;
+}
+
+.PartialAnswer{
+	font-size: 120%;
+	letter-spacing: 0.1em;
+	color: var(--strTitleColor);
+}
+
+.Highlight{
+	color: #000000;
+	background-color: #ffff00;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+ol.QuizQuestions{
+	text-align: left;
+	list-style-type: none;
+}
+
+li.QuizQuestion{
+	padding: 1em;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+}
+
+ol.MCAnswers{
+	text-align: left;
+	list-style-type: upper-alpha;
+	padding: 1em;
+}
+
+ol.MCAnswers li{
+	margin-bottom: 1em;
+}
+
+ol.MSelAnswers{
+	text-align: left;
+	list-style-type: lower-alpha;
+	padding: 1em;
+}
+
+div.ShortAnswer{
+	padding: 1em;
+}
+
+.FuncButton {
+	border-style: solid;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	min-width: 3em;
+	border-left-color: var(--strFuncLightColor);
+	border-top-color: var(--strFuncLightColor);
+	border-right-color: var(--strFuncShadeColor);
+	border-bottom-color: var(--strFuncShadeColor);
+	color: black;
+	background-color: #90979B;
+	border-width: 1pt;
+	cursor: pointer;	
+	box-shadow: 0.2em 0.3em 0.2em var(--strFuncShadeColor);
+}
+
+.FuncButton:active {
+	box-shadow: none;
+}
+
+.FuncButton:hover{
+	color: var(--strExBGColor);
+	background-color: var(--strTextColor);
+}
+
+/*BeginNavBarStyle*/
+
+
+div.NavButtonBar{
+	background-color: var(--strNavBarColor);
+	text-align: center;
+	margin: 0.25rem 0;
+	font-size: 1.0em;
+	padding: 1.2em;
+	clear: both;
+	width: auto;
+	display: block;
+}
+
+.NavButton {
+	border-style: solid;
+	border-radius: 0.3em;
+	padding: 0.7em;
+	min-width: 3em;
+	border-left-color: var(--strNavLightColor);
+	border-top-color: var(--strNavLightColor);
+	border-right-color: var(--strNavShadeColor);
+	border-bottom-color: var(--strNavShadeColor); 
+	background-color: #E8B217;
+	color: #692506;
+	border-width: 1pt;
+	cursor: pointer;	
+	box-shadow: 0.2em 0.3em 0.2em var(--strNavShadeColor);
+	margin: 0px 60px 0px;
+}
+
+.NavButton:active {
+	box-shadow: none;
+}
+
+.NavButton:hover{
+	color: var(--strNavBarColor);
+	background-color: var(--strNavTextColor);
+}
+
+/*EndNavBarStyle*/
+
+a{
+	color: var(--strLinkColor);
+}
+
+a:visited{
+	color: var(--strVLinkColor);
+}
+
+a:hover{
+	color: var(--strLinkColor);
+}
+
+div.CardStyle {
+	position: absolute;
+	font-family: var(--strFontFace);
+	font-size: 1em;
+	border-style: solid;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	min-width: 2em;
+	border-width: 1pt;
+	color: var(--strTextColor);
+	box-shadow: 0.2em 0.3em 0.2em var(--strTextColor);
+	background-color: var(--strExBGColor);
+	left: -50px;
+	top: -50px;
+	overflow: visible;
+	touch-action: none;
+	user-select: none;
+	box-sizing: border-box;
+}
+
+div.CardStyleCentered{
+	text-align: center;
+}
+
+.rtl{
+	text-align: right;
+	font-size: 140%;
+}
+
+a:visited {
+  color: #925D02;
+  text-decoration: none;
+}
+a:hover {
+  color:#B28409 ;
+  text-decoration: underline;
+}
+
+</style>
+
+<script>
+
+//<![CDATA[
+
+<!--
+
+
+//MDH_SCORM modification to support SCORM 1.2 functionality on LMS
+/* JavaScript to find the SCORM API if it is available */
+/* Based on a model at <http://www.claroline.net/doc/en/index.php/How_do_I_create_SCORM_content%3F> */
+
+var API = null; /* SCORM API */
+
+/* look up through the frameset hierarchy for the SCORM API */
+function findAPI(win)
+{
+	while ((win.API == null) && (win.parent != null) && (win.parent != win))
+	{
+		win = win.parent;
+	}
+	API = win.API;
+}
+
+/* initialize the SCORM API */
+function initAPI(win)
+{
+	/* look for the SCORM API up in the frameset */
+	findAPI(win);
+
+	/* if we still have not found the API, look at the opener and its frameset */
+	if ((API == null) && (win.opener != null))
+	{
+		findAPI(win.opener);
+	}
+}
+
+var ScormSubmitted = false; //use this to check whether LMSFinish has been called later.
+
+function ScormStartUp(){
+	initAPI(window);
+	if (API != null){
+		API.LMSInitialize(''); 
+		API.LMSSetValue('cmi.core.lesson_status', 'browsed');
+		API.LMSSetValue('cmi.core.score.min', 0);
+		API.LMSSetValue('cmi.core.score.max', 100);
+		API.LMSCommit('');
+	}
+}
+
+function CheckLMSFinish(){
+	if (API != null){
+		if (ScormSubmitted == false){
+			API.LMSCommit('');
+			API.LMSFinish('');
+			ScormSubmitted = true;
+		}
+	}
+}
+
+function SetScormIncomplete(){
+	if (ScormSubmitted == true){
+		return;
+	}
+	SetScormScore();
+	if (API != null){
+		API.LMSSetValue('cmi.core.lesson_status', 'incomplete');
+		API.LMSSetValue('cmi.core.session_time', MillisecondsToTime((new Date()).getTime() - ScormStartTime));
+		API.LMSCommit('');
+	}
+}
+
+function SetScormComplete(){
+	if (API != null){
+		API.LMSSetValue('cmi.core.session_time', MillisecondsToTime((new Date()).getTime() - ScormStartTime));
+		API.LMSSetValue('cmi.core.lesson_status', 'completed');
+		SetScormScore();
+		API.LMSCommit('');
+		API.LMSFinish('');
+		ScormSubmitted = true;
+	}
+}
+
+var ScormStartTime = (new Date()).getTime();
+
+var SuspendData = '';
+
+function SetScormTimedOut(){
+	if (API != null){
+		if (ScormSubmitted == false){
+			SetScormScore();
+			API.LMSSetValue('cmi.core.exit', 'time-out'); 
+			API.LMSCommit('');
+			CheckLMSFinish();
+		}
+	}
+}
+
+//TIME RENDERING FUNCTION
+function MillisecondsToTime(Seconds){
+	Seconds = Math.round(Seconds/1000);
+	var S = Seconds % 60;
+	Seconds -= S;
+	if (S < 10){S = '0' + S;}
+	var M = (Seconds / 60) % 60;
+	if (M < 10){M = '0' + M;}
+	var H = Math.floor(Seconds / 3600);
+	if (H < 10){H = '0' + H;}
+	return H + ':' + M + ':' + S;
+}
+
+
+
+
+//CODE FOR HANDLING NAV BUTTONS AND FUNCTION BUTTONS
+
+function FocusAButton(){
+	if (document.getElementById('CheckButton1') != null){
+		document.getElementById('CheckButton1').focus();
+	}
+	else{
+		if (document.getElementById('CheckButton2') != null){
+			document.getElementById('CheckButton2').focus();
+		}
+		else{
+			document.getElementsByTagName('button')[0].focus();
+		}
+	}
+}
+
+
+
+
+//CODE FOR HANDLING DISPLAY OF POPUP FEEDBACK BOX
+
+var topZ = 1000;
+
+function ShowMessage(Feedback){
+	var Output = Feedback + '<br /><br />';
+	document.getElementById('FeedbackContent').innerHTML = Output;
+	var FDiv = document.getElementById('FeedbackDiv');
+	topZ++;
+	FDiv.style.zIndex = topZ;
+	FDiv.style.top = TopSettingWithScrollOffset(30) + 'px';
+
+	FDiv.style.display = 'block';
+
+	ShowElements(false, 'input');
+	ShowElements(false, 'select');
+	ShowElements(false, 'object');
+	ShowElements(true, 'object', 'FeedbackContent');
+
+//Focus the OK button
+	//setTimeout("document.getElementById('FeedbackButton').focus()", 50);
+	
+//
+}
+
+function ShowElements(Show, TagName, ContainerToReverse){
+// added third argument to allow objects in the feedback box to appear
+//IE bug -- hide all the form elements that will show through the popup
+//FF on Mac bug : doesn't redisplay objects whose visibility is set to visible
+//unless the object's display property is changed
+
+	//get container object (by Id passed in, or use document otherwise)
+	TopNode = document.getElementById(ContainerToReverse);
+	var Els;
+	if (TopNode != null) {
+		Els = TopNode.getElementsByTagName(TagName);
+	} else {
+		Els = document.getElementsByTagName(TagName);
+	}
+
+	for (var i=0; i<Els.length; i++){
+		if (TagName == "object") {
+			//manipulate object elements in all browsers
+			if (Show == true){
+				Els[i].style.visibility = 'visible';
+			}
+			else{
+				Els[i].style.visibility = 'hidden';
+			}
+		} 
+	}
+}
+
+
+
+function HideFeedback(){
+	document.getElementById('FeedbackDiv').style.display = 'none';
+	ShowElements(true, 'input');
+	ShowElements(true, 'select');
+	ShowElements(true, 'object');
+	ChangeQ(1)
+}
+
+
+//GENERAL UTILITY FUNCTIONS AND VARIABLES
+
+//PAGE DIMENSION FUNCTIONS
+function PageDim(){
+//Get the page width and height
+	this.W = 600;
+	this.H = 400;
+	this.W = document.getElementsByTagName('body')[0].offsetWidth;
+	this.H = document.getElementsByTagName('body')[0].offsetHeight;
+}
+
+var pg = null;
+
+function GetPageXY(El) {
+	var XY = {x: 0, y: 0};
+	while(El){
+		XY.x += El.offsetLeft;
+		XY.y += El.offsetTop;
+		El = El.offsetParent;
+	}
+	return XY;
+}
+
+function GetScrollTop(){
+	if (typeof(window.pageYOffset) == 'number'){
+		return window.pageYOffset;
+	}
+	else{
+		if ((document.body)&&(document.body.scrollTop)){
+			return document.body.scrollTop;
+		}
+		else{
+			if ((document.documentElement)&&(document.documentElement.scrollTop)){
+				return document.documentElement.scrollTop;
+			}
+			else{
+				return 0;
+			}
+		}
+	}
+}
+
+function GetViewportHeight(){
+	if (typeof window.innerHeight != 'undefined'){
+		return window.innerHeight;
+	}
+	else{
+		if (((typeof document.documentElement != 'undefined')&&(typeof document.documentElement.clientHeight !=
+     'undefined'))&&(document.documentElement.clientHeight != 0)){
+			return document.documentElement.clientHeight;
+		}
+		else{
+			return document.getElementsByTagName('body')[0].clientHeight;
+		}
+	}
+}
+
+function TopSettingWithScrollOffset(TopPercent){
+	var T = Math.floor(GetViewportHeight() * (TopPercent/100));
+	return GetScrollTop() + T; 
+}
+
+//CODE FOR AVOIDING LOSS OF DATA WHEN BACKSPACE KEY INVOKES history.back()
+var InTextBox = false;
+
+function SuppressBackspace(e){ 
+	if (InTextBox == true){return;}
+	thisKey = e.keyCode;
+
+	var Suppress = false;
+
+	if (thisKey == 8) {
+		Suppress = true;
+		e.preventDefault();
+	}
+}
+
+window.addEventListener('keypress',SuppressBackspace,false);
+
+function ReduceItems(InArray, ReduceToSize){
+	var ItemToDump=0;
+	var j=0;
+	while (InArray.length > ReduceToSize){
+		ItemToDump = Math.floor(InArray.length*Math.random());
+		InArray.splice(ItemToDump, 1);
+	}
+}
+
+function Shuffle(InArray){
+	var Num;
+	var Temp = new Array();
+	var Len = InArray.length;
+
+	var j = Len;
+
+	for (var i=0; i<Len; i++){
+		Temp[i] = InArray[i];
+	}
+
+	for (i=0; i<Len; i++){
+		Num = Math.floor(j  *  Math.random());
+		InArray[i] = Temp[Num];
+
+		for (var k=Num; k < (j-1); k++) {
+			Temp[k] = Temp[k+1];
+		}
+		j--;
+	}
+	return InArray;
+}
+
+function WriteToInstructions(Feedback) {
+	document.getElementById('InstructionsDiv').innerHTML = Feedback;
+
+}
+
+Imgs = new Array();
+
+function PreloadImages(){
+	var a = PreloadImages.arguments;
+	for (var i=0; i<a.length; i++){
+		Imgs[i] = new Image();
+		Imgs[i].src = a[i];
+	}
+}
+
+function RefreshImages(){
+	for (var i=0; i<document.images.length; i++){
+		if (document.images[i].name.substring(0,6) != 'NavBar'){
+			document.images[i].src = document.images[i].src;
+		}
+	}
+}
+
+
+
+function EscapeDoubleQuotes(InString){
+	return InString.replace(/"/g, '&quot;')
+}
+
+function TrimString(InString){
+        var x = 0;
+
+        if (InString.length != 0) {
+                while ((InString.charAt(InString.length - 1) == '\u0020') || (InString.charAt(InString.length - 1) == '\u000A') || (InString.charAt(InString.length - 1) == '\u000D')){
+                        InString = InString.substring(0, InString.length - 1)
+                }
+
+                while ((InString.charAt(0) == '\u0020') || (InString.charAt(0) == '\u000A') || (InString.charAt(0) == '\u000D')){
+                        InString = InString.substring(1, InString.length)
+                }
+
+                while (InString.indexOf('  ') != -1) {
+                        x = InString.indexOf('  ')
+                        InString = InString.substring(0, x) + InString.substring(x+1, InString.length)
+                 }
+
+                return InString;
+        }
+
+        else {
+                return '';
+        }
+}
+
+function FindLongest(InArray){
+	if (InArray.length < 1){return -1;}
+
+	var Longest = 0;
+	for (var i=1; i<InArray.length; i++){
+		if (InArray[i].length > InArray[Longest].length){
+			Longest = i;
+		}
+	}
+	return Longest;
+}
+
+//SELECTION OBJECT FOR TYPING WITH KEYPAD
+var selObj = null;
+            
+SelObj = function(box){
+	this.box = box;
+	this.selStart = this.box.selectionStart;
+	this.selEnd = this.box.selectionEnd;
+	this.selText = this.box.value.substring(this.selStart, this.selEnd);
+	return this;
+}
+
+function setSelText(newText){
+	var caretPos = this.selStart + newText.length;
+	var newValue = this.box.value.substring(0, this.selStart);
+	newValue += newText;
+	newValue += this.box.value.substring(this.selEnd, this.box.value.length);
+	this.box.value = newValue;
+	this.box.setSelectionRange(caretPos, caretPos);
+	this.box.focus();
+}
+SelObj.prototype.setSelText = setSelText;
+
+function setSelSelectionRange(start, end){
+	this.box.setSelectionRange(start, end);
+}
+SelObj.prototype.setSelSelectionRange = setSelSelectionRange;
+
+//UNICODE CHARACTER FUNCTIONS
+function IsCombiningDiacritic(CharNum){
+	var Result = (((CharNum >= 0x0300)&&(CharNum <= 0x370))||((CharNum >= 0x20d0)&&(CharNum <= 0x20ff)));
+	Result = Result || (((CharNum >= 0x3099)&&(CharNum <= 0x309a))||((CharNum >= 0xfe20)&&(CharNum <= 0xfe23)));
+	return Result;
+}
+
+function IsCJK(CharNum){
+	return ((CharNum >= 0x3000)&&(CharNum < 0xd800));
+}
+
+//SETUP FUNCTIONS
+//BROWSER WILL REFILL TEXT BOXES FROM CACHE IF NOT PREVENTED
+function ClearTextBoxes(){
+	var NList = document.getElementsByTagName('input');
+	for (var i=0; i<NList.length; i++){
+		if ((NList[i].id.indexOf('Guess') > -1)||(NList[i].id.indexOf('Gap') > -1)){
+			NList[i].value = '';
+		}
+		if (NList[i].id.indexOf('Chk') > -1){
+			NList[i].checked = '';
+		}
+	}
+}
+
+
+
+
+
+
+//JQUIZ-SPECIFIC SCORM-RELATED JAVASCRIPT CODE
+
+function SetScormScore(){
+//Reports the current score and any other information back to the LMS
+	if (API != null){
+		API.LMSSetValue('cmi.core.score.raw', Score);
+//Now send detailed reports about each item
+		for (var i=0; i<State.length; i++){
+			if (State[i] != null){
+				var ItemLabel = 'Item_' + (i+1).toString();
+				var ThisItemScore = '';
+				var ThisItemStatus = '';
+				API.LMSSetValue('cmi.objectives.' + i + '.id', 'obj'+ItemLabel);
+				API.LMSSetValue('cmi.interactions.' + i + '.id', 'int'+ItemLabel);
+				API.LMSSetValue('cmi.objectives.' + i + '.score.min', '0');
+				API.LMSSetValue('cmi.objectives.' + i + '.score.max', '100');
+				if (State[i][2] > 0){
+					ThisItemScore = Math.floor(State[i][0] * 100) + '';
+					ThisItemStatus = 'completed';
+				}
+				else{
+					ThisItemScore = '0';
+					ThisItemStatus = 'incomplete';
+				}
+				API.LMSSetValue('cmi.objectives.' + i + '.score.raw', ThisItemScore);
+				API.LMSSetValue('cmi.objectives.' + i + '.status', ThisItemStatus);
+				API.LMSSetValue('cmi.interactions.' + i + '.weighting', I[i][0]);
+//We can only use the performance type, because we're storing multiple responses of various types.
+				API.LMSSetValue('cmi.interactions.' + i + '.type', 'performance');
+				API.LMSSetValue('cmi.interactions.' + i + '.student_response', State[i][5]);
+			}
+		}
+		
+		API.LMSCommit('');
+	}
+}
+
+
+//JQUIZ CORE JAVASCRIPT CODE
+
+var CurrQNum = 0;
+var CorrectIndicator = '&#x2714;';
+var IncorrectIndicator = '&#x2718;';
+var YourScoreIs = 'Your current score is ';
+
+//New for 6.2.2.0
+var CompletedSoFar = 'Correct answers so far : ';
+var ExerciseCompleted = 'You have completed the quiz';
+var ShowCompletedSoFar = true;
+
+var ContinuousScoring = false;
+var CorrectFirstTime = 'Questions answered correctly first time: ';
+var ShowCorrectFirstTime = false;
+var ShuffleQs = true;
+var ShuffleAs = true;
+var DefaultRight = 'Correct!';
+var DefaultWrong = 'Sorry! Wrong Answer.';
+var QsToShow = 5;
+var Score = 0;
+var Finished = false;
+var Qs = null;
+var QArray = new Array();
+var ShowingAllQuestions = false;
+var ShowAllQuestionsCaption = 'All questions';
+var ShowOneByOneCaption = 'Single question';
+var State = new Array();
+var Feedback = '';
+var TimeOver = false;
+var strInstructions = '';
+var Locked = false;
+var QsDone = '0 out of 5';
+//var AllDone = true;
+
+//The following variable can be used to add a message explaining that
+//the question is finished, so no further marking will take place.
+var strQuestionFinished = '';
+
+function CompleteEmptyFeedback(){
+	var QNum, ANum;
+	for (QNum=0; QNum<I.length; QNum++){
+//Only do this if not multi-select
+		if (I[QNum][2] != '3'){
+  		for (ANum = 0; ANum<I[QNum][3].length; ANum++){
+  			//if (I[QNum][3][ANum][1].length < 1){
+			tempvar = I[QNum][3][ANum][1];
+			if (I[QNum][3][ANum][2] > 0){
+				I[QNum][3][ANum][1] = '<font size="10">Correct!<br></font>' + tempvar;
+			}
+			else{
+				I[QNum][3][ANum][1] =  '<font size="10">Sorry! Wrong Answer <br></font>' + tempvar;
+			}
+  			//}
+  		}
+		}
+	}
+}
+
+function SetUpQuestions(){
+	var AList = new Array(); 
+	var QList = new Array();
+	var i, j;
+	Qs = document.getElementById('Questions');
+	while (Qs.getElementsByTagName('li').length > 0){
+		QList.push(Qs.removeChild(Qs.getElementsByTagName('li')[0]));
+	}
+	var DumpItem = 0;
+	if (QsToShow > QList.length){
+		QsToShow = QList.length;
+	}
+	while (QsToShow < QList.length){
+		DumpItem = Math.floor(QList.length*Math.random());
+		for (j=DumpItem; j<(QList.length-1); j++){
+			QList[j] = QList[j+1];
+		}
+		QList.length = QList.length-1;
+	}
+	if (ShuffleQs == true){
+		QList = Shuffle(QList);
+	}
+	if (ShuffleAs == true){
+		var As;
+		for (var i=0; i<QList.length; i++){
+			As = QList[i].getElementsByTagName('ol')[0];
+			if (As != null){
+  			AList.length = 0;
+				while (As.getElementsByTagName('li').length > 0){
+					AList.push(As.removeChild(As.getElementsByTagName('li')[0]));
+				}
+				AList = Shuffle(AList);
+				for (j=0; j<AList.length; j++){
+					As.appendChild(AList[j]);
+				}
+			}
+		}
+	}
+	
+	for (i=0; i<QList.length; i++){
+		Qs.appendChild(QList[i]);
+		QArray[QArray.length] = QList[i];
+	}
+
+//Show the first item
+	QArray[0].style.display = '';
+	
+//Now hide all except the first item
+	for (i=1; i<QArray.length; i++){
+		QArray[i].style.display = 'none';
+	}		
+	SetQNumReadout();
+	
+	SetFocusToTextbox();
+}
+
+function SetFocusToTextbox(){
+//if there's a textbox, set the focus in it
+	if (QArray[CurrQNum].getElementsByTagName('input')[0] != null){
+		QArray[CurrQNum].getElementsByTagName('input')[0].focus();
+//and show a keypad if there is one
+		if (document.getElementById('CharacterKeypad') != null){
+			document.getElementById('CharacterKeypad').style.display = 'block';
+		}
+	}
+	else{
+  	if (QArray[CurrQNum].getElementsByTagName('textarea')[0] != null){
+  		QArray[CurrQNum].getElementsByTagName('textarea')[0].focus();	
+//and show a keypad if there is one
+			if (document.getElementById('CharacterKeypad') != null){
+				document.getElementById('CharacterKeypad').style.display = 'block';
+			}
+		}
+//This added for 6.0.4.11: hide accented character buttons if no textbox
+		else{
+			if (document.getElementById('CharacterKeypad') != null){
+				document.getElementById('CharacterKeypad').style.display = 'none';
+			}
+		}
+	}
+}
+
+function ChangeQ(ChangeBy){
+//The following line prevents moving to another question until the current
+//question is answered correctly. Uncomment it to enable this behaviour. 
+//	if (State[CurrQNum][0] == -1){return;}
+	if (((CurrQNum + ChangeBy) < 0)||((CurrQNum + ChangeBy) >= QArray.length)){return;}
+	QArray[CurrQNum].style.display = 'none';
+	CurrQNum += ChangeBy;
+	QArray[CurrQNum].style.display = '';
+//Undocumented function added 10/12/2004
+	ShowSpecialReadingForQuestion();
+	SetQNumReadout();
+	SetFocusToTextbox();
+}
+
+var HiddenReadingShown = false;
+function ShowSpecialReadingForQuestion(){
+//Undocumented function for showing specific reading text elements which change with each question
+//Added on 10/12/2004
+	if (document.getElementById('ReadingDiv') != null){
+		if (HiddenReadingShown == true){
+			document.getElementById('ReadingDiv').innerHTML = '';
+		}
+		if (QArray[CurrQNum] != null){
+//Fix for 6.0.4.25
+			var Children = QArray[CurrQNum].getElementsByTagName('div');
+			for (var i=0; i<Children.length; i++){
+			if (Children[i].className=="HiddenReading"){
+					document.getElementById('ReadingDiv').innerHTML = Children[i].innerHTML;
+					HiddenReadingShown = true;
+//Hide the ShowAllQuestions button to avoid confusion
+					if (document.getElementById('ShowMethodButton') != null){
+						document.getElementById('ShowMethodButton').style.display = 'none';
+					}
+				}
+			}	
+		}
+	}
+}
+
+function SetQNumReadout(){
+	document.getElementById('QNumReadout').innerHTML = 'Question number '+ (CurrQNum+1) + ' out of ' + QArray.length;
+	if ((CurrQNum+1) >= QArray.length){
+		if (document.getElementById('NextQButton') != null){
+			document.getElementById('NextQButton').style.visibility = 'hidden';
+		}
+	}
+	else{
+		if (document.getElementById('NextQButton') != null){
+			document.getElementById('NextQButton').style.visibility = 'visible';
+		}
+	}
+	if (CurrQNum <= 0){
+		if (document.getElementById('PrevQButton') != null){
+			document.getElementById('PrevQButton').style.visibility = 'hidden';
+		}
+	}
+	else{
+		if (document.getElementById('PrevQButton') != null){
+			document.getElementById('PrevQButton').style.visibility = 'visible';
+		}
+	}
+}
+
+var I=new Array();
+I[0]=new Array();I[0][0]=100;
+I[0][1]='';
+I[0][2]='0';
+I[0][3]=new Array();
+I[0][3][0]=new Array('Mercury','Planets away from the Sun is in this order; Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune. Jupiter is also the largest planet of the solar system. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=PtkqwslbLY8\');return false;">Take a look of Jupiter</a>',0,0,1);
+I[0][3][1]=new Array('Mars','Planets away from the Sun is in this order; Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune. Jupiter is also the largest planet of the solar system. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=PtkqwslbLY8\');return false;">Take a look of Jupiter</a>',0,0,1);
+I[0][3][2]=new Array('Saturn','Planets away from the Sun is in this order; Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune. Jupiter is also the largest planet of the solar system. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=PtkqwslbLY8\');return false;">Take a look of Jupiter</a>',0,0,1);
+I[0][3][3]=new Array('Jupiter','Planets away from the Sun is in this order; Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune. Jupiter is also the largest planet of the solar system. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=PtkqwslbLY8\');return false;">Take a look of Jupiter</a>',1,100,1);
+I[1]=new Array();I[1][0]=100;
+I[1][1]='';
+I[1][2]='0';
+I[1][3]=new Array();
+I[1][3][0]=new Array('Sun comes between the Moon and Earth','<a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=cxrLRbkOwKs\');return false;">See this video how exactly Moon blocks the Sunlight and causes solar eclipse</a>',0,0,1);
+I[1][3][1]=new Array('Earth comes between the Moon and Sun','<a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=cxrLRbkOwKs\');return false;">See this video how exactly Moon blocks the Sunlight and causes solar eclipse</a>',0,0,1);
+I[1][3][2]=new Array('Sun is hidden by the Earth\'s shadow','<a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=cxrLRbkOwKs\');return false;">See this video how exactly Moon blocks the Sunlight and causes solar eclipse</a>',0,0,1);
+I[1][3][3]=new Array('Moon comes between the Sun and Earth','<a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=cxrLRbkOwKs\');return false;">See this video how exactly Moon blocks the Sunlight and causes solar eclipse</a>',1,100,1);
+I[2]=new Array();I[2][0]=100;
+I[2][1]='';
+I[2][2]='0';
+I[2][3]=new Array();
+I[2][3][0]=new Array('Galileo Galilei','Nicolaus Copernicus (19 February 1473 \u2013 24 May 1543) was a Renaissance polymath, active as a mathematician, and astronomer. He formulated a model of the universe that placed the Sun rather than Earth at its center. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.britannica.com/video/23884/Copernicus-theory-solar-system\');return false;">Look at the heliocentric model of Copernicus in detail.</a>',0,0,1);
+I[2][3][1]=new Array('Nicolaus Copernicus','Nicolaus Copernicus (19 February 1473 \u2013 24 May 1543) was a Renaissance polymath, active as a mathematician, and astronomer. He formulated a model of the universe that placed the Sun rather than Earth at its center. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.britannica.com/video/23884/Copernicus-theory-solar-system\');return false;">Look at the heliocentric model of Copernicus in detail.</a>',1,100,1);
+I[2][3][2]=new Array('Johannes Kepler','Nicolaus Copernicus (19 February 1473 \u2013 24 May 1543) was a Renaissance polymath, active as a mathematician, and astronomer. He formulated a model of the universe that placed the Sun rather than Earth at its center. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.britannica.com/video/23884/Copernicus-theory-solar-system\');return false;">Look at the heliocentric model of Copernicus in detail.</a>',0,0,1);
+I[2][3][3]=new Array('Ptolemy','Nicolaus Copernicus (19 February 1473 \u2013 24 May 1543) was a Renaissance polymath, active as a mathematician, and astronomer. He formulated a model of the universe that placed the Sun rather than Earth at its center. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.britannica.com/video/23884/Copernicus-theory-solar-system\');return false;">Look at the heliocentric model of Copernicus in detail.</a>',0,0,1);
+I[3]=new Array();I[3][0]=100;
+I[3][1]='';
+I[3][2]='0';
+I[3][3]=new Array();
+I[3][3][0]=new Array('Nicolaus Copernicus','Johannes Kepler (27 December 1571 \u2013 15 November 1630) was a German astronomer, mathematician and natural philosopher. He is a key figure in the 17th-century Scientific Revolution, best known for his laws of planetary motion. These works also provided one of the foundations for Newton\'s theory of universal gravitation.<a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=htxGvdQbl5w\');return false;">Look at this to know more about the Kepler\'s Law of Planetary motion</a>',0,0,1);
+I[3][3][1]=new Array('Johannes Kepler','Johannes Kepler (27 December 1571 \u2013 15 November 1630) was a German astronomer, mathematician and natural philosopher. He is a key figure in the 17th-century Scientific Revolution, best known for his laws of planetary motion. These works also provided one of the foundations for Newton\'s theory of universal gravitation.<a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=htxGvdQbl5w\');return false;">Look at this to know more about the Kepler\'s Law of Planetary motion</a>',1,100,1);
+I[3][3][2]=new Array('Galileo Galilei','Johannes Kepler (27 December 1571 \u2013 15 November 1630) was a German astronomer, mathematician and natural philosopher. He is a key figure in the 17th-century Scientific Revolution, best known for his laws of planetary motion. These works also provided one of the foundations for Newton\'s theory of universal gravitation.<a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=htxGvdQbl5w\');return false;">Look at this to know more about the Kepler\'s Law of Planetary motion</a>',0,0,1);
+I[3][3][3]=new Array('Ptolemy','Johannes Kepler (27 December 1571 \u2013 15 November 1630) was a German astronomer, mathematician and natural philosopher. He is a key figure in the 17th-century Scientific Revolution, best known for his laws of planetary motion. These works also provided one of the foundations for Newton\'s theory of universal gravitation.<a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=htxGvdQbl5w\');return false;">Look at this to know more about the Kepler\'s Law of Planetary motion</a>',0,0,1);
+I[4]=new Array();I[4][0]=100;
+I[4][1]='';
+I[4][2]='0';
+I[4][3]=new Array();
+I[4][3][0]=new Array('1/4','The moon is a bit more than one-quarter (27 percent) the size of Earth, a much larger ratio (1:4) than any other planets and their moons. Earth\'s moon is the fifth largest moon in the solar system.<a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://cdn.mos.cms.futurecdn.net/VAbn4Z5nfJH5Abn5kRViFN-970-80.gif\');return false;">See a comparison between the size of the Moon and Earth. </a>',1,100,1);
+I[4][3][1]=new Array('1/5','The moon is a bit more than one-quarter (27 percent) the size of Earth, a much larger ratio (1:4) than any other planets and their moons. Earth\'s moon is the fifth largest moon in the solar system.<a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://cdn.mos.cms.futurecdn.net/VAbn4Z5nfJH5Abn5kRViFN-970-80.gif\');return false;">See a comparison between the size of the Moon and Earth. </a>',0,0,1);
+I[4][3][2]=new Array('1/3','The moon is a bit more than one-quarter (27 percent) the size of Earth, a much larger ratio (1:4) than any other planets and their moons. Earth\'s moon is the fifth largest moon in the solar system.<a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://cdn.mos.cms.futurecdn.net/VAbn4Z5nfJH5Abn5kRViFN-970-80.gif\');return false;">See a comparison between the size of the Moon and Earth. </a>',0,0,1);
+I[4][3][3]=new Array('1/6','The moon is a bit more than one-quarter (27 percent) the size of Earth, a much larger ratio (1:4) than any other planets and their moons. Earth\'s moon is the fifth largest moon in the solar system.<a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://cdn.mos.cms.futurecdn.net/VAbn4Z5nfJH5Abn5kRViFN-970-80.gif\');return false;">See a comparison between the size of the Moon and Earth. </a>',0,0,1);
+I[5]=new Array();I[5][0]=100;
+I[5][1]='';
+I[5][2]='0';
+I[5][3]=new Array();
+I[5][3][0]=new Array('1/4','If you were lucky enough to go to the moon, you would be able to jump six times as high there as you can here on Earth because of its less gravity. You may see how astronaut is juming on the Moon <iframe src="https://giphy.com/embed/69mUSKBujnpgmxcqlg" width="280" height="267" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>',0,0,1);
+I[5][3][1]=new Array('1/5','If you were lucky enough to go to the moon, you would be able to jump six times as high there as you can here on Earth because of its less gravity. You may see how astronaut is juming on the Moon <iframe src="https://giphy.com/embed/69mUSKBujnpgmxcqlg" width="280" height="267" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>',0,0,1);
+I[5][3][2]=new Array('1/6','If you were lucky enough to go to the moon, you would be able to jump six times as high there as you can here on Earth because of its less gravity. You may see how astronaut is juming on the Moon <iframe src="https://giphy.com/embed/69mUSKBujnpgmxcqlg" width="280" height="267" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>',1,100,1);
+I[5][3][3]=new Array('1/9','If you were lucky enough to go to the moon, you would be able to jump six times as high there as you can here on Earth because of its less gravity. You may see how astronaut is juming on the Moon <iframe src="https://giphy.com/embed/69mUSKBujnpgmxcqlg" width="280" height="267" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>',0,0,1);
+I[6]=new Array();I[6][0]=100;
+I[6][1]='';
+I[6][2]='0';
+I[6][3]=new Array();
+I[6][3][0]=new Array('Meteoroids are \'space rocks once they hit Earth','When meteoroids enter Earth\u2019s atmosphere (or that of another planet, like Mars) at high speed and burn up, the fireballs or \u201Cshooting stars\u201D are called meteors. When a meteoroid survives a trip through the atmosphere and hits the ground, it\u2019s called a meteorite.',1,100,1);
+I[6][3][1]=new Array('Meteorites are \'space rocks\' once they hit Earth','When meteoroids enter Earth\u2019s atmosphere (or that of another planet, like Mars) at high speed and burn up, the fireballs or \u201Cshooting stars\u201D are called meteors. When a meteoroid survives a trip through the atmosphere and hits the ground, it\u2019s called a meteorite.',0,0,1);
+I[6][3][2]=new Array('Both are the same','When meteoroids enter Earth\u2019s atmosphere (or that of another planet, like Mars) at high speed and burn up, the fireballs or \u201Cshooting stars\u201D are called meteors. When a meteoroid survives a trip through the atmosphere and hits the ground, it\u2019s called a meteorite.',0,0,1);
+I[6][3][3]=new Array('Meteoroids are made of rocks and meteorites are made of ice.','When meteoroids enter Earth\u2019s atmosphere (or that of another planet, like Mars) at high speed and burn up, the fireballs or \u201Cshooting stars\u201D are called meteors. When a meteoroid survives a trip through the atmosphere and hits the ground, it\u2019s called a meteorite.',0,0,1);
+I[7]=new Array();I[7][0]=100;
+I[7][1]='';
+I[7][2]='0';
+I[7][3]=new Array();
+I[7][3][0]=new Array('Ice and Rocks','Comets are mostly made of ice and dust (like a dirty snowball), with a few chunks of rock and possibly some organic (carbon) compounds. The ices that make the bulk of a comet include water ice, dry ice (solid carbon dioxide), frozen ammonia, solid methane and several common atmospheric gases in solid form such as oxygen. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=D1o91Wf75pM\');return false;">Click here to know more about comets.</a>',1,100,1);
+I[7][3][1]=new Array('Liquid Water and Ice','Comets are mostly made of ice and dust (like a dirty snowball), with a few chunks of rock and possibly some organic (carbon) compounds. The ices that make the bulk of a comet include water ice, dry ice (solid carbon dioxide), frozen ammonia, solid methane and several common atmospheric gases in solid form such as oxygen. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=D1o91Wf75pM\');return false;">Click here to know more about comets.</a>',0,0,1);
+I[7][3][2]=new Array('Hydrogen gas and Rocks','Comets are mostly made of ice and dust (like a dirty snowball), with a few chunks of rock and possibly some organic (carbon) compounds. The ices that make the bulk of a comet include water ice, dry ice (solid carbon dioxide), frozen ammonia, solid methane and several common atmospheric gases in solid form such as oxygen. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=D1o91Wf75pM\');return false;">Click here to know more about comets.</a>',0,0,1);
+I[7][3][3]=new Array('Liquid Methene','Comets are mostly made of ice and dust (like a dirty snowball), with a few chunks of rock and possibly some organic (carbon) compounds. The ices that make the bulk of a comet include water ice, dry ice (solid carbon dioxide), frozen ammonia, solid methane and several common atmospheric gases in solid form such as oxygen. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=D1o91Wf75pM\');return false;">Click here to know more about comets.</a>',0,0,1);
+I[8]=new Array();I[8][0]=100;
+I[8][1]='';
+I[8][2]='0';
+I[8][3]=new Array();
+I[8][3][0]=new Array('Sirius A','Proxima Centauri is a small, low-mass star located 4.2465 light-years (1.3020 pc) away from the Sun in the southern constellation of Centaurus. Proxima Centauri is a red dwarf star with a mass about 12.5% of the Sun\'s mass (M\u2609), and its actual diameter is about one-seventh (14%) the diameter of the Sun. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=niUOc5_o438\');return false;">Click here to more about the Proxima Centauri</a>',0,0,1);
+I[8][3][1]=new Array('Proxima Centauri','Proxima Centauri is a small, low-mass star located 4.2465 light-years (1.3020 pc) away from the Sun in the southern constellation of Centaurus. Proxima Centauri is a red dwarf star with a mass about 12.5% of the Sun\'s mass (M\u2609), and its actual diameter is about one-seventh (14%) the diameter of the Sun. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=niUOc5_o438\');return false;">Click here to more about the Proxima Centauri</a>',1,100,1);
+I[8][3][2]=new Array('Alpha Centauri','Proxima Centauri is a small, low-mass star located 4.2465 light-years (1.3020 pc) away from the Sun in the southern constellation of Centaurus. Proxima Centauri is a red dwarf star with a mass about 12.5% of the Sun\'s mass (M\u2609), and its actual diameter is about one-seventh (14%) the diameter of the Sun. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=niUOc5_o438\');return false;">Click here to more about the Proxima Centauri</a>',0,0,1);
+I[8][3][3]=new Array('Pole Star','Proxima Centauri is a small, low-mass star located 4.2465 light-years (1.3020 pc) away from the Sun in the southern constellation of Centaurus. Proxima Centauri is a red dwarf star with a mass about 12.5% of the Sun\'s mass (M\u2609), and its actual diameter is about one-seventh (14%) the diameter of the Sun. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=niUOc5_o438\');return false;">Click here to more about the Proxima Centauri</a>',0,0,1);
+I[9]=new Array();I[9][0]=100;
+I[9][1]='';
+I[9][2]='0';
+I[9][3]=new Array();
+I[9][3][0]=new Array('Mars and Jupiter','The asteroid belt is a torus-shaped region in the Solar System, located roughly between the orbits of the planets Jupiter and Mars. It contains a great many solid, irregularly shaped bodies, of many sizes, but much smaller than planets, called asteroids or minor planets. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=vD-jbm79kUE\');return false;">Look at the astroid belt here.</a>',1,100,1);
+I[9][3][1]=new Array('Earth and Venus','The asteroid belt is a torus-shaped region in the Solar System, located roughly between the orbits of the planets Jupiter and Mars. It contains a great many solid, irregularly shaped bodies, of many sizes, but much smaller than planets, called asteroids or minor planets. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=vD-jbm79kUE\');return false;">Look at the astroid belt here.</a>',0,0,1);
+I[9][3][2]=new Array('Earth and Mars','The asteroid belt is a torus-shaped region in the Solar System, located roughly between the orbits of the planets Jupiter and Mars. It contains a great many solid, irregularly shaped bodies, of many sizes, but much smaller than planets, called asteroids or minor planets. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=vD-jbm79kUE\');return false;">Look at the astroid belt here.</a>',0,0,1);
+I[9][3][3]=new Array('Jupiter and Saturn','The asteroid belt is a torus-shaped region in the Solar System, located roughly between the orbits of the planets Jupiter and Mars. It contains a great many solid, irregularly shaped bodies, of many sizes, but much smaller than planets, called asteroids or minor planets. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=vD-jbm79kUE\');return false;">Look at the astroid belt here.</a>',0,0,1);
+I[10]=new Array();I[10][0]=100;
+I[10][1]='';
+I[10][2]='0';
+I[10][3]=new Array();
+I[10][3][0]=new Array('<img src="https://s.w-x.co/util/image/w/in-marsplanet.jpg?v=at&w=400&h=400" width="100" height="100"/>','Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. The days and seasons are comparable to those of Earth, because the rotation period as well as the tilt of the rotational axis relative to the ecliptic plane are similar. Many countries have space missions to Mars. India also took part and know about the India\'s Mars mission <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=OIKunbW-Ch4\');return false;">Click here</a>',1,100,1);
+I[10][3][1]=new Array('<img src="https://static01.nyt.com/images/2020/09/22/science/19SCI-OUTTHERE-VENUS1/19SCI-OUTTHERE-VENUS1-mediumSquareAt3X.jpg" width="100" height="100"/>','Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. The days and seasons are comparable to those of Earth, because the rotation period as well as the tilt of the rotational axis relative to the ecliptic plane are similar. Many countries have space missions to Mars. India also took part and know about the India\'s Mars mission <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=OIKunbW-Ch4\');return false;">Click here</a>',0,0,1);
+I[10][3][2]=new Array('<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Mercury_in_true_color.jpg/330px-Mercury_in_true_color.jpg" width="100" height="100"/>','Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. The days and seasons are comparable to those of Earth, because the rotation period as well as the tilt of the rotational axis relative to the ecliptic plane are similar. Many countries have space missions to Mars. India also took part and know about the India\'s Mars mission <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=OIKunbW-Ch4\');return false;">Click here</a>',0,0,1);
+I[10][3][3]=new Array('<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/330px-FullMoon2010.jpg" width="100" height="100"/>','Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. The days and seasons are comparable to those of Earth, because the rotation period as well as the tilt of the rotational axis relative to the ecliptic plane are similar. Many countries have space missions to Mars. India also took part and know about the India\'s Mars mission <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=OIKunbW-Ch4\');return false;">Click here</a>',0,0,1);
+I[11]=new Array();I[11][0]=100;
+I[11][1]='';
+I[11][2]='0';
+I[11][3]=new Array();
+I[11][3][0]=new Array('Planet','Pluto is a dwarf planet in the Kuiper belt, a ring of bodies beyond the orbit of Neptune. After Pluto was discovered in 1930, it was declared to be the ninth planet from the Sun. International Astronomical Union (IAU) in 2006 formally catagories Pluto as a dwarf planet. Want to take a tour to Pluto? <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=xmqDpuDLVYw\');return false;">Click here</a>',0,0,1);
+I[11][3][1]=new Array('Moon','Pluto is a dwarf planet in the Kuiper belt, a ring of bodies beyond the orbit of Neptune. After Pluto was discovered in 1930, it was declared to be the ninth planet from the Sun. International Astronomical Union (IAU) in 2006 formally catagories Pluto as a dwarf planet. Want to take a tour to Pluto? <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=xmqDpuDLVYw\');return false;">Click here</a>',0,0,1);
+I[11][3][2]=new Array('Dwarf Planet','Pluto is a dwarf planet in the Kuiper belt, a ring of bodies beyond the orbit of Neptune. After Pluto was discovered in 1930, it was declared to be the ninth planet from the Sun. International Astronomical Union (IAU) in 2006 formally catagories Pluto as a dwarf planet. Want to take a tour to Pluto? <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=xmqDpuDLVYw\');return false;">Click here</a>',1,100,1);
+I[11][3][3]=new Array('Astroid','Pluto is a dwarf planet in the Kuiper belt, a ring of bodies beyond the orbit of Neptune. After Pluto was discovered in 1930, it was declared to be the ninth planet from the Sun. International Astronomical Union (IAU) in 2006 formally catagories Pluto as a dwarf planet. Want to take a tour to Pluto? <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=xmqDpuDLVYw\');return false;">Click here</a>',0,0,1);
+I[12]=new Array();I[12][0]=100;
+I[12][1]='';
+I[12][2]='0';
+I[12][3]=new Array();
+I[12][3][0]=new Array('Gamma-ray, UV, Visible, Infrared','The electromagnetic (EM) spectrum is the range of all types of EM radiation. Radiation is energy that travels and spreads out as it goes \u2013 the visible light that comes from a lamp in your house and the radio waves that come from a radio station are two types of electromagnetic radiation. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=cfXzwh3KadE\');return false;">Look here to know more about the EM spectrum and how it is generated.</a>',1,100,1);
+I[12][3][1]=new Array('Visible, Gamma-ray, X-ray, Radio','The electromagnetic (EM) spectrum is the range of all types of EM radiation. Radiation is energy that travels and spreads out as it goes \u2013 the visible light that comes from a lamp in your house and the radio waves that come from a radio station are two types of electromagnetic radiation. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=cfXzwh3KadE\');return false;">Look here to know more about the EM spectrum and how it is generated.</a>',0,0,1);
+I[12][3][2]=new Array('Infrared, Radio, Microwave, Visible','The electromagnetic (EM) spectrum is the range of all types of EM radiation. Radiation is energy that travels and spreads out as it goes \u2013 the visible light that comes from a lamp in your house and the radio waves that come from a radio station are two types of electromagnetic radiation. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=cfXzwh3KadE\');return false;">Look here to know more about the EM spectrum and how it is generated.</a>',0,0,1);
+I[12][3][3]=new Array('X-ray, Infrared, Visible, Radio','The electromagnetic (EM) spectrum is the range of all types of EM radiation. Radiation is energy that travels and spreads out as it goes \u2013 the visible light that comes from a lamp in your house and the radio waves that come from a radio station are two types of electromagnetic radiation. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=cfXzwh3KadE\');return false;">Look here to know more about the EM spectrum and how it is generated.</a>',0,0,1);
+I[13]=new Array();I[13][0]=100;
+I[13][1]='';
+I[13][2]='0';
+I[13][3]=new Array();
+I[13][3][0]=new Array('Hydrogen fusion in their cores','Stars are fueled by the nuclear fusion of hydrogen to form helium deep in their interiors. The outflow of energy from the central regions of the star provides the pressure necessary to keep the star from collapsing under its own weight, and the energy by which it shines.',1,100,1);
+I[13][3][1]=new Array('Uranium fusion in their cores','Stars are fueled by the nuclear fusion of hydrogen to form helium deep in their interiors. The outflow of energy from the central regions of the star provides the pressure necessary to keep the star from collapsing under its own weight, and the energy by which it shines.',0,0,1);
+I[13][3][2]=new Array('Hydrogen burning in their cores','Stars are fueled by the nuclear fusion of hydrogen to form helium deep in their interiors. The outflow of energy from the central regions of the star provides the pressure necessary to keep the star from collapsing under its own weight, and the energy by which it shines.',0,0,1);
+I[13][3][3]=new Array('Oxyogen burning in their cores','Stars are fueled by the nuclear fusion of hydrogen to form helium deep in their interiors. The outflow of energy from the central regions of the star provides the pressure necessary to keep the star from collapsing under its own weight, and the energy by which it shines.',0,0,1);
+I[14]=new Array();I[14][0]=100;
+I[14][1]='';
+I[14][2]='0';
+I[14][3]=new Array();
+I[14][3][0]=new Array('Milky Way','Milky Way Galaxy, roughly 150,000 light-years in diameter, that contains Earth\u2019s solar system. It includes the multitude of stars whose light is seen as the Milky Way, the irregular luminous band that encircles the sky, defining the plane of the galactic disk. Its precise constituents, shape, and true size and mass are still not known. It contains large amounts of dark matter and a massive black hole at its core (see Sagittarius A). The Sun lies in one of the Galaxy\u2019s spiral arms, about 27,000 light-years from the centre.',1,100,1);
+I[14][3][1]=new Array('M87','Milky Way Galaxy, roughly 150,000 light-years in diameter, that contains Earth\u2019s solar system. It includes the multitude of stars whose light is seen as the Milky Way, the irregular luminous band that encircles the sky, defining the plane of the galactic disk. Its precise constituents, shape, and true size and mass are still not known. It contains large amounts of dark matter and a massive black hole at its core (see Sagittarius A). The Sun lies in one of the Galaxy\u2019s spiral arms, about 27,000 light-years from the centre.',0,0,1);
+I[14][3][2]=new Array('Andromed','Milky Way Galaxy, roughly 150,000 light-years in diameter, that contains Earth\u2019s solar system. It includes the multitude of stars whose light is seen as the Milky Way, the irregular luminous band that encircles the sky, defining the plane of the galactic disk. Its precise constituents, shape, and true size and mass are still not known. It contains large amounts of dark matter and a massive black hole at its core (see Sagittarius A). The Sun lies in one of the Galaxy\u2019s spiral arms, about 27,000 light-years from the centre.',0,0,1);
+I[14][3][3]=new Array('Small Magellanic Cloud','Milky Way Galaxy, roughly 150,000 light-years in diameter, that contains Earth\u2019s solar system. It includes the multitude of stars whose light is seen as the Milky Way, the irregular luminous band that encircles the sky, defining the plane of the galactic disk. Its precise constituents, shape, and true size and mass are still not known. It contains large amounts of dark matter and a massive black hole at its core (see Sagittarius A). The Sun lies in one of the Galaxy\u2019s spiral arms, about 27,000 light-years from the centre.',0,0,1);
+I[15]=new Array();I[15][0]=100;
+I[15][1]='';
+I[15][2]='0';
+I[15][3]=new Array();
+I[15][3][0]=new Array('Gravitational accumulation of gas and dust','Want to know more about how the stars form, <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=UJ-Xd_M7KIA\');return false;">Click here</a>',1,100,1);
+I[15][3][1]=new Array('By colliding planets','Want to know more about how the stars form, <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=UJ-Xd_M7KIA\');return false;">Click here</a>',0,0,1);
+I[15][3][2]=new Array('By colliding gas and dust clouds','Want to know more about how the stars form, <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=UJ-Xd_M7KIA\');return false;">Click here</a>',0,0,1);
+I[15][3][3]=new Array('Condensation of hydrogen gas','Want to know more about how the stars form, <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=UJ-Xd_M7KIA\');return false;">Click here</a>',0,0,1);
+I[16]=new Array();I[16][0]=100;
+I[16][1]='';
+I[16][2]='0';
+I[16][3]=new Array();
+I[16][3][0]=new Array('12 billion years','Do you know how the age of the universe measured? If you want to know, <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=tCn96DbBnB4\');return false;">Click here</a>',0,0,1);
+I[16][3][1]=new Array('10 billion years','Do you know how the age of the universe measured? If you want to know, <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=tCn96DbBnB4\');return false;">Click here</a>',0,0,1);
+I[16][3][2]=new Array('14 billion years','Do you know how the age of the universe measured? If you want to know, <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=tCn96DbBnB4\');return false;">Click here</a>',1,100,1);
+I[16][3][3]=new Array('11 billion years','Do you know how the age of the universe measured? If you want to know, <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=tCn96DbBnB4\');return false;">Click here</a>',0,0,1);
+I[17]=new Array();I[17][0]=100;
+I[17][1]='';
+I[17][2]='0';
+I[17][3]=new Array();
+I[17][3][0]=new Array('4.6 million years','Our Sun is 4.6 million years old. How do you know the Sun\'s age? <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=a55A2OPyio0\');return false;">Here is the answer</a>',0,0,1);
+I[17][3][1]=new Array('4.6 billion years','Our Sun is 4.6 million years old. How do you know the Sun\'s age? <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=a55A2OPyio0\');return false;">Here is the answer</a>',1,100,1);
+I[17][3][2]=new Array('6.4 billion years','Our Sun is 4.6 million years old. How do you know the Sun\'s age? <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=a55A2OPyio0\');return false;">Here is the answer</a>',0,0,1);
+I[17][3][3]=new Array('6.4 million years','Our Sun is 4.6 million years old. How do you know the Sun\'s age? <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=a55A2OPyio0\');return false;">Here is the answer</a>',0,0,1);
+I[18]=new Array();I[18][0]=100;
+I[18][1]='';
+I[18][2]='0';
+I[18][3]=new Array();
+I[18][3][0]=new Array('5.4 million years','Our Earth is 4.5 billion years. Want to know how is it measured? <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=7cFYPYaD4zQ\');return false;">Click here</a>',0,0,1);
+I[18][3][1]=new Array('4.5 billion years','Our Earth is 4.5 billion years. Want to know how is it measured? <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=7cFYPYaD4zQ\');return false;">Click here</a>',1,100,1);
+I[18][3][2]=new Array('4.5 million years','Our Earth is 4.5 billion years. Want to know how is it measured? <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=7cFYPYaD4zQ\');return false;">Click here</a>',0,0,1);
+I[18][3][3]=new Array('5.4 billion years','Our Earth is 4.5 billion years. Want to know how is it measured? <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=7cFYPYaD4zQ\');return false;">Click here</a>',0,0,1);
+I[19]=new Array();I[19][0]=100;
+I[19][1]='';
+I[19][2]='0';
+I[19][3]=new Array();
+I[19][3][0]=new Array('Get sucked in by its gravity','A black hole is a region of spacetime where gravity is so strong that nothing \u2014 no particles or even electromagnetic radiation such as light \u2014 can escape from it. The theory of general relativity predicts that a sufficiently compact mass can deform spacetime to form a black hole. What If Earth Were Sucked Into a Black Hole? <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=KtoefCOBcgg\');return false;">Look here</a>',0,0,1);
+I[19][3][1]=new Array('Orbit around it faster and faster until it reaches the speed of light','A black hole is a region of spacetime where gravity is so strong that nothing \u2014 no particles or even electromagnetic radiation such as light \u2014 can escape from it. The theory of general relativity predicts that a sufficiently compact mass can deform spacetime to form a black hole. What If Earth Were Sucked Into a Black Hole? <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=KtoefCOBcgg\');return false;">Look here</a>',0,0,1);
+I[19][3][2]=new Array('Get torn apart by tidal forces while orbiting it','A black hole is a region of spacetime where gravity is so strong that nothing \u2014 no particles or even electromagnetic radiation such as light \u2014 can escape from it. The theory of general relativity predicts that a sufficiently compact mass can deform spacetime to form a black hole. What If Earth Were Sucked Into a Black Hole? <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=KtoefCOBcgg\');return false;">Look here</a>',1,100,1);
+I[19][3][3]=new Array('Become a star','A black hole is a region of spacetime where gravity is so strong that nothing \u2014 no particles or even electromagnetic radiation such as light \u2014 can escape from it. The theory of general relativity predicts that a sufficiently compact mass can deform spacetime to form a black hole. What If Earth Were Sucked Into a Black Hole? <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=KtoefCOBcgg\');return false;">Look here</a>',0,0,1);
+I[20]=new Array();I[20][0]=100;
+I[20][1]='';
+I[20][2]='0';
+I[20][3]=new Array();
+I[20][3][0]=new Array('Contracting','Our university is expanding. But do you know that our closest galaxy Andromeda is coming towards us? How is it possible if the universe is expamnding? <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=xN82vX9j6t4\');return false;">Click here to know.</a>',0,0,1);
+I[20][3][1]=new Array('Expanding','Our university is expanding. But do you know that our closest galaxy Andromeda is coming towards us? How is it possible if the universe is expamnding? <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=xN82vX9j6t4\');return false;">Click here to know.</a>',1,100,1);
+I[20][3][2]=new Array('Not changing','Our university is expanding. But do you know that our closest galaxy Andromeda is coming towards us? How is it possible if the universe is expamnding? <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=xN82vX9j6t4\');return false;">Click here to know.</a>',0,0,1);
+I[20][3][3]=new Array('Oscillating','Our university is expanding. But do you know that our closest galaxy Andromeda is coming towards us? How is it possible if the universe is expamnding? <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=xN82vX9j6t4\');return false;">Click here to know.</a>',0,0,1);
+I[21]=new Array();I[21][0]=100;
+I[21][1]='';
+I[21][2]='0';
+I[21][3]=new Array();
+I[21][3][0]=new Array('Stars twinkle planets don\'t','The easiest way to pick out planets is to remember this quick rule of thumb: stars twinkle and planets don\'t. Seen with the naked eye, planets and stars both appear as pinpoints of light. When you observe a star, you\'ll notice that it twinkles and the light may appear to change colors.',1,100,1);
+I[21][3][1]=new Array('Planets twinkle stars don\'t','The easiest way to pick out planets is to remember this quick rule of thumb: stars twinkle and planets don\'t. Seen with the naked eye, planets and stars both appear as pinpoints of light. When you observe a star, you\'ll notice that it twinkles and the light may appear to change colors.',0,0,1);
+I[21][3][2]=new Array('There is no way to do so','The easiest way to pick out planets is to remember this quick rule of thumb: stars twinkle and planets don\'t. Seen with the naked eye, planets and stars both appear as pinpoints of light. When you observe a star, you\'ll notice that it twinkles and the light may appear to change colors.',0,0,1);
+I[21][3][3]=new Array('Planets are colored while stars are white','The easiest way to pick out planets is to remember this quick rule of thumb: stars twinkle and planets don\'t. Seen with the naked eye, planets and stars both appear as pinpoints of light. When you observe a star, you\'ll notice that it twinkles and the light may appear to change colors.',0,0,1);
+I[22]=new Array();I[22][0]=100;
+I[22][1]='';
+I[22][2]='0';
+I[22][3]=new Array();
+I[22][3][0]=new Array('8 Kiloparsec','The Milky Way is about 1,000,000,000,000,000,000 km (about 100,000 light years or about 30 kpc) across. The Sun does not lie near the center of our Galaxy. It lies about 8 kpc from the center on what is known as the Orion Arm of the Milky Way.',1,100,1);
+I[22][3][1]=new Array('8 Megaparsec','The Milky Way is about 1,000,000,000,000,000,000 km (about 100,000 light years or about 30 kpc) across. The Sun does not lie near the center of our Galaxy. It lies about 8 kpc from the center on what is known as the Orion Arm of the Milky Way.',0,0,1);
+I[22][3][2]=new Array('4 Kiloparsec','The Milky Way is about 1,000,000,000,000,000,000 km (about 100,000 light years or about 30 kpc) across. The Sun does not lie near the center of our Galaxy. It lies about 8 kpc from the center on what is known as the Orion Arm of the Milky Way.',0,0,1);
+I[22][3][3]=new Array('4 Parsec','The Milky Way is about 1,000,000,000,000,000,000 km (about 100,000 light years or about 30 kpc) across. The Sun does not lie near the center of our Galaxy. It lies about 8 kpc from the center on what is known as the Orion Arm of the Milky Way.',0,0,1);
+I[23]=new Array();I[23][0]=100;
+I[23][1]='';
+I[23][2]='0';
+I[23][3]=new Array();
+I[23][3][0]=new Array('Refraction of light through Earth\'s turbulent atmosphere','The stars twinkle in the night sky because of the effects of our atmosphere. When starlight enters our atmosphere it is affected by winds in the atmosphere and by areas with different temperatures and densities. This causes the light from the star to twinkle when seen from the ground. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=dwSL1M74R-g\');return false;">Click here to know more about it.</a>',1,100,1);
+I[23][3][1]=new Array('Reflection of light through Earth\'s turbulent atmosphere','The stars twinkle in the night sky because of the effects of our atmosphere. When starlight enters our atmosphere it is affected by winds in the atmosphere and by areas with different temperatures and densities. This causes the light from the star to twinkle when seen from the ground. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=dwSL1M74R-g\');return false;">Click here to know more about it.</a>',0,0,1);
+I[23][3][2]=new Array('Blinking of eyes','The stars twinkle in the night sky because of the effects of our atmosphere. When starlight enters our atmosphere it is affected by winds in the atmosphere and by areas with different temperatures and densities. This causes the light from the star to twinkle when seen from the ground. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=dwSL1M74R-g\');return false;">Click here to know more about it.</a>',0,0,1);
+I[23][3][3]=new Array('Stars brighting and dimming','The stars twinkle in the night sky because of the effects of our atmosphere. When starlight enters our atmosphere it is affected by winds in the atmosphere and by areas with different temperatures and densities. This causes the light from the star to twinkle when seen from the ground. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=dwSL1M74R-g\');return false;">Click here to know more about it.</a>',0,0,1);
+I[24]=new Array();I[24][0]=100;
+I[24][1]='';
+I[24][2]='0';
+I[24][3]=new Array();
+I[24][3][0]=new Array('Alan Shepard','Neil Armstrong is the first person landed on the Moon. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=6fn2lXKzddg\');return false;">See this video of his first step on the Moon.</a>',0,0,1);
+I[24][3][1]=new Array('Neil Armstrong','Neil Armstrong is the first person landed on the Moon. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=6fn2lXKzddg\');return false;">See this video of his first step on the Moon.</a>',1,100,1);
+I[24][3][2]=new Array('Yuri Gagarin','Neil Armstrong is the first person landed on the Moon. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=6fn2lXKzddg\');return false;">See this video of his first step on the Moon.</a>',0,0,1);
+I[24][3][3]=new Array('Rakesh Sharma','Neil Armstrong is the first person landed on the Moon. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=6fn2lXKzddg\');return false;">See this video of his first step on the Moon.</a>',0,0,1);
+I[25]=new Array();I[25][0]=100;
+I[25][1]='';
+I[25][2]='0';
+I[25][3]=new Array();
+I[25][3][0]=new Array('79','Jupiter has 53 named moons and another 26 awaiting official names. Combined, scientists now think Jupiter has 79 moons. Take a look at the Jupiter and its moon from the  <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=wJiYoNN9lKk\');return false;">NASA\'s Juno mission.</a>',1,100,1);
+I[25][3][1]=new Array('16','Jupiter has 53 named moons and another 26 awaiting official names. Combined, scientists now think Jupiter has 79 moons. Take a look at the Jupiter and its moon from the  <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=wJiYoNN9lKk\');return false;">NASA\'s Juno mission.</a>',0,0,1);
+I[25][3][2]=new Array('26','Jupiter has 53 named moons and another 26 awaiting official names. Combined, scientists now think Jupiter has 79 moons. Take a look at the Jupiter and its moon from the  <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=wJiYoNN9lKk\');return false;">NASA\'s Juno mission.</a>',0,0,1);
+I[25][3][3]=new Array('82','Jupiter has 53 named moons and another 26 awaiting official names. Combined, scientists now think Jupiter has 79 moons. Take a look at the Jupiter and its moon from the  <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=wJiYoNN9lKk\');return false;">NASA\'s Juno mission.</a>',0,0,1);
+I[26]=new Array();I[26][0]=100;
+I[26][1]='';
+I[26][2]='0';
+I[26][3]=new Array();
+I[26][3][0]=new Array('Particles of rock','<img src="https://tse1.mm.bing.net/th?id=OIP.8I66h2HceqityyG8jalYlQHaEo&pid=Api&P=0&w=316&h=197" width="100" height="100"/><br> The rings of Saturn are the most extensive ring system of any planet in the Solar System. They consist of countless small particles, ranging in size from micrometers to meters, that orbit around Saturn. The ring particles are made almost entirely of water ice, with a trace component of rocky material.',0,0,1);
+I[26][3][1]=new Array('Ice of Methene','<img src="https://tse1.mm.bing.net/th?id=OIP.8I66h2HceqityyG8jalYlQHaEo&pid=Api&P=0&w=316&h=197" width="100" height="100"/><br> The rings of Saturn are the most extensive ring system of any planet in the Solar System. They consist of countless small particles, ranging in size from micrometers to meters, that orbit around Saturn. The ring particles are made almost entirely of water ice, with a trace component of rocky material.',0,0,1);
+I[26][3][2]=new Array('Particles of water ice','<img src="https://tse1.mm.bing.net/th?id=OIP.8I66h2HceqityyG8jalYlQHaEo&pid=Api&P=0&w=316&h=197" width="100" height="100"/><br> The rings of Saturn are the most extensive ring system of any planet in the Solar System. They consist of countless small particles, ranging in size from micrometers to meters, that orbit around Saturn. The ring particles are made almost entirely of water ice, with a trace component of rocky material.',1,100,1);
+I[26][3][3]=new Array('Debris of satellites','<img src="https://tse1.mm.bing.net/th?id=OIP.8I66h2HceqityyG8jalYlQHaEo&pid=Api&P=0&w=316&h=197" width="100" height="100"/><br> The rings of Saturn are the most extensive ring system of any planet in the Solar System. They consist of countless small particles, ranging in size from micrometers to meters, that orbit around Saturn. The ring particles are made almost entirely of water ice, with a trace component of rocky material.',0,0,1);
+I[27]=new Array();I[27][0]=100;
+I[27][1]='';
+I[27][2]='0';
+I[27][3]=new Array();
+I[27][3][0]=new Array('Galileo Galilei','Early telescopes were primarily used for making Earth-bound observations, such as surveying and military tactics. Galileo Galilei (1564-1642) was part of a small group of astronomers who turned telescopes towards the heavens. After hearing about the "Danish perspective glass" in 1609, Galileo constructed his own telescope. He subsequently demonstrated the telescope in Venice. His demonstration of the telescope earned him a lifetime lectureship.',1,100,1);
+I[27][3][1]=new Array('Nicolaus Copernicus','Early telescopes were primarily used for making Earth-bound observations, such as surveying and military tactics. Galileo Galilei (1564-1642) was part of a small group of astronomers who turned telescopes towards the heavens. After hearing about the "Danish perspective glass" in 1609, Galileo constructed his own telescope. He subsequently demonstrated the telescope in Venice. His demonstration of the telescope earned him a lifetime lectureship.',0,0,1);
+I[27][3][2]=new Array('Johannes Kepler','Early telescopes were primarily used for making Earth-bound observations, such as surveying and military tactics. Galileo Galilei (1564-1642) was part of a small group of astronomers who turned telescopes towards the heavens. After hearing about the "Danish perspective glass" in 1609, Galileo constructed his own telescope. He subsequently demonstrated the telescope in Venice. His demonstration of the telescope earned him a lifetime lectureship.',0,0,1);
+I[27][3][3]=new Array('Ptolemy','Early telescopes were primarily used for making Earth-bound observations, such as surveying and military tactics. Galileo Galilei (1564-1642) was part of a small group of astronomers who turned telescopes towards the heavens. After hearing about the "Danish perspective glass" in 1609, Galileo constructed his own telescope. He subsequently demonstrated the telescope in Venice. His demonstration of the telescope earned him a lifetime lectureship.',0,0,1);
+I[28]=new Array();I[28][0]=100;
+I[28][1]='';
+I[28][2]='0';
+I[28][3]=new Array();
+I[28][3][0]=new Array('Pole Star','Sirius, also known as the Dog Star or Sirius A, is the brightest star in Earth\'s night sky. The name means "glowing" in Greek \u2014 a fitting description, as only a few planets, the full moon and the International Space Station outshine this star.',0,0,1);
+I[28][3][1]=new Array('Sirius A','Sirius, also known as the Dog Star or Sirius A, is the brightest star in Earth\'s night sky. The name means "glowing" in Greek \u2014 a fitting description, as only a few planets, the full moon and the International Space Station outshine this star.',1,100,1);
+I[28][3][2]=new Array('Proxima Centauri','Sirius, also known as the Dog Star or Sirius A, is the brightest star in Earth\'s night sky. The name means "glowing" in Greek \u2014 a fitting description, as only a few planets, the full moon and the International Space Station outshine this star.',0,0,1);
+I[28][3][3]=new Array('Vega','Sirius, also known as the Dog Star or Sirius A, is the brightest star in Earth\'s night sky. The name means "glowing" in Greek \u2014 a fitting description, as only a few planets, the full moon and the International Space Station outshine this star.',0,0,1);
+I[29]=new Array();I[29][0]=100;
+I[29][1]='';
+I[29][2]='0';
+I[29][3]=new Array();
+I[29][3][0]=new Array('Venus','Venus, which is not a star at all ! Originally, the terms "morning star" and "evening star" applied only to the brightest planet of all, Venus. Far more dazzling than any of the actual stars in the sky, Venus does not appear to twinkle, but instead glows with a steady, silvery light .',1,100,1);
+I[29][3][1]=new Array('Mars','Venus, which is not a star at all ! Originally, the terms "morning star" and "evening star" applied only to the brightest planet of all, Venus. Far more dazzling than any of the actual stars in the sky, Venus does not appear to twinkle, but instead glows with a steady, silvery light .',0,0,1);
+I[29][3][2]=new Array('Jupiter','Venus, which is not a star at all ! Originally, the terms "morning star" and "evening star" applied only to the brightest planet of all, Venus. Far more dazzling than any of the actual stars in the sky, Venus does not appear to twinkle, but instead glows with a steady, silvery light .',0,0,1);
+I[29][3][3]=new Array('Saturn','Venus, which is not a star at all ! Originally, the terms "morning star" and "evening star" applied only to the brightest planet of all, Venus. Far more dazzling than any of the actual stars in the sky, Venus does not appear to twinkle, but instead glows with a steady, silvery light .',0,0,1);
+I[30]=new Array();I[30][0]=100;
+I[30][1]='';
+I[30][2]='0';
+I[30][3]=new Array();
+I[30][3][0]=new Array('Sky blue','The Moon\'s atmosphere is negligibly thin, essentially vacuum, so its sky is always black. The image shows how the sky and our Earth looks like from the Moon. <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/NASA-Apollo8-Dec24-Earthrise.jpg/800px-NASA-Apollo8-Dec24-Earthrise.jpg" width="100" height="100"/>',0,0,1);
+I[30][3][1]=new Array('Yellow','The Moon\'s atmosphere is negligibly thin, essentially vacuum, so its sky is always black. The image shows how the sky and our Earth looks like from the Moon. <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/NASA-Apollo8-Dec24-Earthrise.jpg/800px-NASA-Apollo8-Dec24-Earthrise.jpg" width="100" height="100"/>',0,0,1);
+I[30][3][2]=new Array('Red','The Moon\'s atmosphere is negligibly thin, essentially vacuum, so its sky is always black. The image shows how the sky and our Earth looks like from the Moon. <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/NASA-Apollo8-Dec24-Earthrise.jpg/800px-NASA-Apollo8-Dec24-Earthrise.jpg" width="100" height="100"/>',0,0,1);
+I[30][3][3]=new Array('Black','The Moon\'s atmosphere is negligibly thin, essentially vacuum, so its sky is always black. The image shows how the sky and our Earth looks like from the Moon. <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/NASA-Apollo8-Dec24-Earthrise.jpg/800px-NASA-Apollo8-Dec24-Earthrise.jpg" width="100" height="100"/>',1,100,1);
+I[31]=new Array();I[31][0]=100;
+I[31][1]='';
+I[31][2]='0';
+I[31][3]=new Array();
+I[31][3][0]=new Array('Mars','Mars is called as Red Planet. The rocks and soil on the surface of Mars contain a dust that is primarily made up of iron (in addition to small amounts of other elements, including chlorine). Wind eroded these surface rocks and soil, and ancient volcanos blew out the iron, spreading it all over the planet. When this happened, the iron within the dust reacted with oxygen, producing a red rust color. So, Mars is red because it has a layer of rusty dust covering its entire surface! <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/330px-OSIRIS_Mars_true_color.jpg" width="100" height="100"/>',1,100,1);
+I[31][3][1]=new Array('Venus','Mars is called as Red Planet. The rocks and soil on the surface of Mars contain a dust that is primarily made up of iron (in addition to small amounts of other elements, including chlorine). Wind eroded these surface rocks and soil, and ancient volcanos blew out the iron, spreading it all over the planet. When this happened, the iron within the dust reacted with oxygen, producing a red rust color. So, Mars is red because it has a layer of rusty dust covering its entire surface! <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/330px-OSIRIS_Mars_true_color.jpg" width="100" height="100"/>',0,0,1);
+I[31][3][2]=new Array('Mercury','Mars is called as Red Planet. The rocks and soil on the surface of Mars contain a dust that is primarily made up of iron (in addition to small amounts of other elements, including chlorine). Wind eroded these surface rocks and soil, and ancient volcanos blew out the iron, spreading it all over the planet. When this happened, the iron within the dust reacted with oxygen, producing a red rust color. So, Mars is red because it has a layer of rusty dust covering its entire surface! <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/330px-OSIRIS_Mars_true_color.jpg" width="100" height="100"/>',0,0,1);
+I[31][3][3]=new Array('Neptune','Mars is called as Red Planet. The rocks and soil on the surface of Mars contain a dust that is primarily made up of iron (in addition to small amounts of other elements, including chlorine). Wind eroded these surface rocks and soil, and ancient volcanos blew out the iron, spreading it all over the planet. When this happened, the iron within the dust reacted with oxygen, producing a red rust color. So, Mars is red because it has a layer of rusty dust covering its entire surface! <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/330px-OSIRIS_Mars_true_color.jpg" width="100" height="100"/>',0,0,1);
+I[32]=new Array();I[32][0]=100;
+I[32][1]='';
+I[32][2]='0';
+I[32][3]=new Array();
+I[32][3][0]=new Array('Mercury','The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth\'s Moon. <br><img src="https://media.nationalgeographic.org/assets/photos/000/261/26166.jpg" width="100" height="100"/>',1,100,1);
+I[32][3][1]=new Array('Earth','The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth\'s Moon. <br><img src="https://media.nationalgeographic.org/assets/photos/000/261/26166.jpg" width="100" height="100"/>',0,0,1);
+I[32][3][2]=new Array('Mars','The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth\'s Moon. <br><img src="https://media.nationalgeographic.org/assets/photos/000/261/26166.jpg" width="100" height="100"/>',0,0,1);
+I[32][3][3]=new Array('Venus','The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth\'s Moon. <br><img src="https://media.nationalgeographic.org/assets/photos/000/261/26166.jpg" width="100" height="100"/>',0,0,1);
+I[33]=new Array();I[33][0]=100;
+I[33][1]='';
+I[33][2]='0';
+I[33][3]=new Array();
+I[33][3][0]=new Array('Beautiful rainbow','<img src="https://tse1.mm.bing.net/th?id=OIP.8I66h2HceqityyG8jalYlQHaEo&pid=Api&P=0&w=316&h=197" width="100" height="100"/><br> The rings of Saturn are the most extensive ring system of any planet in the Solar System. They consist of countless small particles, ranging in size from micrometers to meters, that orbit around Saturn. The ring particles are made almost entirely of water ice, with a trace component of rocky material.',0,0,1);
+I[33][3][1]=new Array('Beautiful ring','<img src="https://tse1.mm.bing.net/th?id=OIP.8I66h2HceqityyG8jalYlQHaEo&pid=Api&P=0&w=316&h=197" width="100" height="100"/><br> The rings of Saturn are the most extensive ring system of any planet in the Solar System. They consist of countless small particles, ranging in size from micrometers to meters, that orbit around Saturn. The ring particles are made almost entirely of water ice, with a trace component of rocky material.',1,100,1);
+I[33][3][2]=new Array('Water','<img src="https://tse1.mm.bing.net/th?id=OIP.8I66h2HceqityyG8jalYlQHaEo&pid=Api&P=0&w=316&h=197" width="100" height="100"/><br> The rings of Saturn are the most extensive ring system of any planet in the Solar System. They consist of countless small particles, ranging in size from micrometers to meters, that orbit around Saturn. The ring particles are made almost entirely of water ice, with a trace component of rocky material.',0,0,1);
+I[33][3][3]=new Array('Diamonds','<img src="https://tse1.mm.bing.net/th?id=OIP.8I66h2HceqityyG8jalYlQHaEo&pid=Api&P=0&w=316&h=197" width="100" height="100"/><br> The rings of Saturn are the most extensive ring system of any planet in the Solar System. They consist of countless small particles, ranging in size from micrometers to meters, that orbit around Saturn. The ring particles are made almost entirely of water ice, with a trace component of rocky material.',0,0,1);
+I[34]=new Array();I[34][0]=100;
+I[34][1]='';
+I[34][2]='0';
+I[34][3]=new Array();
+I[34][3][0]=new Array('Astronauts','An astronomer is a scientist in the field of astronomy who focuses their studies on a specific question or field outside the scope of Earth. They observe astronomical objects such as stars, planets, moons, comets and galaxies \u2013 in either observational (by analyzing the data) or theoretical astronomy.',0,0,1);
+I[34][3][1]=new Array('Astronomers','An astronomer is a scientist in the field of astronomy who focuses their studies on a specific question or field outside the scope of Earth. They observe astronomical objects such as stars, planets, moons, comets and galaxies \u2013 in either observational (by analyzing the data) or theoretical astronomy.',1,100,1);
+I[34][3][2]=new Array('Physicists','An astronomer is a scientist in the field of astronomy who focuses their studies on a specific question or field outside the scope of Earth. They observe astronomical objects such as stars, planets, moons, comets and galaxies \u2013 in either observational (by analyzing the data) or theoretical astronomy.',0,0,1);
+I[34][3][3]=new Array('Mathamatician','An astronomer is a scientist in the field of astronomy who focuses their studies on a specific question or field outside the scope of Earth. They observe astronomical objects such as stars, planets, moons, comets and galaxies \u2013 in either observational (by analyzing the data) or theoretical astronomy.',0,0,1);
+I[35]=new Array();I[35][0]=100;
+I[35][1]='';
+I[35][2]='0';
+I[35][3]=new Array();
+I[35][3][0]=new Array('Olympus Mons','<a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=QXpzNNARzGI\');return false;">Let\'s clime Olympus Mons</a>, the highest mountain of Mars.',1,100,1);
+I[35][3][1]=new Array('Ascraeus Mons','<a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=QXpzNNARzGI\');return false;">Let\'s clime Olympus Mons</a>, the highest mountain of Mars.',0,0,1);
+I[35][3][2]=new Array('Mons Ardeshir','<a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=QXpzNNARzGI\');return false;">Let\'s clime Olympus Mons</a>, the highest mountain of Mars.',0,0,1);
+I[35][3][3]=new Array('Mons Blanc','<a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=QXpzNNARzGI\');return false;">Let\'s clime Olympus Mons</a>, the highest mountain of Mars.',0,0,1);
+I[36]=new Array();I[36][0]=100;
+I[36][1]='';
+I[36][2]='0';
+I[36][3]=new Array();
+I[36][3][0]=new Array('Eagle Nebula','The Orion Nebula is a diffuse nebula situated in the Milky Way, being south of Orion\'s Belt in the constellation of Orion. It is one of the brightest nebulae and is visible to the naked eye in the night sky. <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg/450px-Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg" width="100" height="100"/>',0,0,1);
+I[36][3][1]=new Array('Eta Carinae Nebula','The Orion Nebula is a diffuse nebula situated in the Milky Way, being south of Orion\'s Belt in the constellation of Orion. It is one of the brightest nebulae and is visible to the naked eye in the night sky. <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg/450px-Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg" width="100" height="100"/>',0,0,1);
+I[36][3][2]=new Array('Orion Nebula','The Orion Nebula is a diffuse nebula situated in the Milky Way, being south of Orion\'s Belt in the constellation of Orion. It is one of the brightest nebulae and is visible to the naked eye in the night sky. <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg/450px-Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg" width="100" height="100"/>',1,100,1);
+I[36][3][3]=new Array('Dumbbell Nebula','The Orion Nebula is a diffuse nebula situated in the Milky Way, being south of Orion\'s Belt in the constellation of Orion. It is one of the brightest nebulae and is visible to the naked eye in the night sky. <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg/450px-Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg" width="100" height="100"/>',0,0,1);
+I[37]=new Array();I[37][0]=100;
+I[37][1]='';
+I[37][2]='0';
+I[37][3]=new Array();
+I[37][3][0]=new Array('<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMJixMFMZimVVJFNtqs69WomzRqcsoZ4iERQ&usqp=CAU" width="100" height="100"/>','The Great Red Spot is a persistent high-pressure region in the atmosphere of Jupiter, producing an anticyclonic storm that is one of the largest in the Solar System. Located 22 degrees south of Jupiter\'s equator, it produces wind-speeds up to 432 km/h. Observations from 1665 to 1713 are believed to be of the same storm; if this is correct, it has existed for at least 357 years.',1,100,1);
+I[37][3][1]=new Array('<img src="https://www.sciencealert.com/images/2020-06/saturn-hexagon-false-colour.jpg" width="100" height="100"/>','The Great Red Spot is a persistent high-pressure region in the atmosphere of Jupiter, producing an anticyclonic storm that is one of the largest in the Solar System. Located 22 degrees south of Jupiter\'s equator, it produces wind-speeds up to 432 km/h. Observations from 1665 to 1713 are believed to be of the same storm; if this is correct, it has existed for at least 357 years.',0,0,1);
+I[37][3][2]=new Array('<img src="https://www.universetoday.com/wp-content/uploads/2010/01/Io_Feat-e1433786196804.jpg" width="100" height="100"/>','The Great Red Spot is a persistent high-pressure region in the atmosphere of Jupiter, producing an anticyclonic storm that is one of the largest in the Solar System. Located 22 degrees south of Jupiter\'s equator, it produces wind-speeds up to 432 km/h. Observations from 1665 to 1713 are believed to be of the same storm; if this is correct, it has existed for at least 357 years.',0,0,1);
+I[37][3][3]=new Array('<img src="https://www.scienceabc.com/wp-content/uploads/2019/08/3d-rendered-illustration-of-the-mars-olympus-mons-Illustration-Sebastian-KaulitzkiS.jpg" width="100" height="100"/>','The Great Red Spot is a persistent high-pressure region in the atmosphere of Jupiter, producing an anticyclonic storm that is one of the largest in the Solar System. Located 22 degrees south of Jupiter\'s equator, it produces wind-speeds up to 432 km/h. Observations from 1665 to 1713 are believed to be of the same storm; if this is correct, it has existed for at least 357 years.',0,0,1);
+I[38]=new Array();I[38][0]=100;
+I[38][1]='';
+I[38][2]='0';
+I[38][3]=new Array();
+I[38][3][0]=new Array('Red','Blue stars are the hottest. A star called Rigel is 17 times the mass of our sun and 40,000 times more bright. It has a surface temperature of 11,000 K.',0,0,1);
+I[38][3][1]=new Array('Yellow','Blue stars are the hottest. A star called Rigel is 17 times the mass of our sun and 40,000 times more bright. It has a surface temperature of 11,000 K.',0,0,1);
+I[38][3][2]=new Array('Blue','Blue stars are the hottest. A star called Rigel is 17 times the mass of our sun and 40,000 times more bright. It has a surface temperature of 11,000 K.',1,100,1);
+I[38][3][3]=new Array('White','Blue stars are the hottest. A star called Rigel is 17 times the mass of our sun and 40,000 times more bright. It has a surface temperature of 11,000 K.',0,0,1);
+I[39]=new Array();I[39][0]=100;
+I[39][1]='';
+I[39][2]='0';
+I[39][3]=new Array();
+I[39][3][0]=new Array('A cloud of gas and dust','A nebula is a giant cloud of dust and gas in space. Some nebulae (more than one nebula) come from the gas and dust thrown out by the explosion of a dying star, such as a supernova. Other nebulae are regions where new stars are beginning to form. You may <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=0MzWiKjSr9I\');return false;">visit here</a> to know more about nebula.',1,100,1);
+I[39][3][1]=new Array('Collection of planets','A nebula is a giant cloud of dust and gas in space. Some nebulae (more than one nebula) come from the gas and dust thrown out by the explosion of a dying star, such as a supernova. Other nebulae are regions where new stars are beginning to form. You may <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=0MzWiKjSr9I\');return false;">visit here</a> to know more about nebula.',0,0,1);
+I[39][3][2]=new Array('A cloud of water and methene ice','A nebula is a giant cloud of dust and gas in space. Some nebulae (more than one nebula) come from the gas and dust thrown out by the explosion of a dying star, such as a supernova. Other nebulae are regions where new stars are beginning to form. You may <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=0MzWiKjSr9I\');return false;">visit here</a> to know more about nebula.',0,0,1);
+I[39][3][3]=new Array('Collection of Stars','A nebula is a giant cloud of dust and gas in space. Some nebulae (more than one nebula) come from the gas and dust thrown out by the explosion of a dying star, such as a supernova. Other nebulae are regions where new stars are beginning to form. You may <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=0MzWiKjSr9I\');return false;">visit here</a> to know more about nebula.',0,0,1);
+I[40]=new Array();I[40][0]=100;
+I[40][1]='';
+I[40][2]='0';
+I[40][3]=new Array();
+I[40][3][0]=new Array('2 days','The day with no shadow is called ``Zero Shadow Day".  At Pune there are two zero shadow day. You may calculate the zero shadow day at your location <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://astron-soc.in/outreach/activities/zero-shadow-day/\');return false;">from here</a>.',1,100,1);
+I[40][3][1]=new Array('7 days','The day with no shadow is called ``Zero Shadow Day".  At Pune there are two zero shadow day. You may calculate the zero shadow day at your location <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://astron-soc.in/outreach/activities/zero-shadow-day/\');return false;">from here</a>.',0,0,1);
+I[40][3][2]=new Array('1 day','The day with no shadow is called ``Zero Shadow Day".  At Pune there are two zero shadow day. You may calculate the zero shadow day at your location <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://astron-soc.in/outreach/activities/zero-shadow-day/\');return false;">from here</a>.',0,0,1);
+I[40][3][3]=new Array('3 days','The day with no shadow is called ``Zero Shadow Day".  At Pune there are two zero shadow day. You may calculate the zero shadow day at your location <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://astron-soc.in/outreach/activities/zero-shadow-day/\');return false;">from here</a>.',0,0,1);
+I[41]=new Array();I[41][0]=100;
+I[41][1]='';
+I[41][2]='0';
+I[41][3]=new Array();
+I[41][3][0]=new Array('Mars','As a gas giant, Jupiter doesn\'t have a true surface. The planet is mostly swirling gases and liquids. While a spacecraft would have nowhere to land on Jupiter, it wouldn\'t be able to fly through unscathed either.',0,0,1);
+I[41][3][1]=new Array('Jupiter','As a gas giant, Jupiter doesn\'t have a true surface. The planet is mostly swirling gases and liquids. While a spacecraft would have nowhere to land on Jupiter, it wouldn\'t be able to fly through unscathed either.',1,100,1);
+I[41][3][2]=new Array('Mercury','As a gas giant, Jupiter doesn\'t have a true surface. The planet is mostly swirling gases and liquids. While a spacecraft would have nowhere to land on Jupiter, it wouldn\'t be able to fly through unscathed either.',0,0,1);
+I[41][3][3]=new Array('Venus','As a gas giant, Jupiter doesn\'t have a true surface. The planet is mostly swirling gases and liquids. While a spacecraft would have nowhere to land on Jupiter, it wouldn\'t be able to fly through unscathed either.',0,0,1);
+I[42]=new Array();I[42][0]=100;
+I[42][1]='';
+I[42][2]='0';
+I[42][3]=new Array();
+I[42][3][0]=new Array('10','Our Sun is the biggest celestial object in the Solar System, containing 99.8% of all the Solar System\u2019s mass. Compared to Earth, which has a mass of around 5.9 quadrillion kg, the Sun is 330.000 times more massive than our little home planet. More than one million Earths could fit inside the Sun if it were hollow. The Sun has a radius of 696.340 km and a diameter of 1.39 million km. <br><img src="https://nineplanets.org/wp-content/uploads/2020/09/318-Earth-masses.jpg" width="100" height="100"/>',0,0,1);
+I[42][3][1]=new Array('10 thousand','Our Sun is the biggest celestial object in the Solar System, containing 99.8% of all the Solar System\u2019s mass. Compared to Earth, which has a mass of around 5.9 quadrillion kg, the Sun is 330.000 times more massive than our little home planet. More than one million Earths could fit inside the Sun if it were hollow. The Sun has a radius of 696.340 km and a diameter of 1.39 million km. <br><img src="https://nineplanets.org/wp-content/uploads/2020/09/318-Earth-masses.jpg" width="100" height="100"/>',0,0,1);
+I[42][3][2]=new Array('1 million','Our Sun is the biggest celestial object in the Solar System, containing 99.8% of all the Solar System\u2019s mass. Compared to Earth, which has a mass of around 5.9 quadrillion kg, the Sun is 330.000 times more massive than our little home planet. More than one million Earths could fit inside the Sun if it were hollow. The Sun has a radius of 696.340 km and a diameter of 1.39 million km. <br><img src="https://nineplanets.org/wp-content/uploads/2020/09/318-Earth-masses.jpg" width="100" height="100"/>',1,100,1);
+I[42][3][3]=new Array('10 million','Our Sun is the biggest celestial object in the Solar System, containing 99.8% of all the Solar System\u2019s mass. Compared to Earth, which has a mass of around 5.9 quadrillion kg, the Sun is 330.000 times more massive than our little home planet. More than one million Earths could fit inside the Sun if it were hollow. The Sun has a radius of 696.340 km and a diameter of 1.39 million km. <br><img src="https://nineplanets.org/wp-content/uploads/2020/09/318-Earth-masses.jpg" width="100" height="100"/>',0,0,1);
+I[43]=new Array();I[43][0]=100;
+I[43][1]='';
+I[43][2]='0';
+I[43][3]=new Array();
+I[43][3][0]=new Array('0','It will split into a continuous spectrum of visible light due to the dispersion of the light. Want to know more about the dispersion of light, <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=ASEdGwpyn58\');return false;">click here</a>',0,0,1);
+I[43][3][1]=new Array('Not countable','It will split into a continuous spectrum of visible light due to the dispersion of the light. Want to know more about the dispersion of light, <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=ASEdGwpyn58\');return false;">click here</a>',1,100,1);
+I[43][3][2]=new Array('8','It will split into a continuous spectrum of visible light due to the dispersion of the light. Want to know more about the dispersion of light, <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=ASEdGwpyn58\');return false;">click here</a>',0,0,1);
+I[43][3][3]=new Array('14','It will split into a continuous spectrum of visible light due to the dispersion of the light. Want to know more about the dispersion of light, <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=ASEdGwpyn58\');return false;">click here</a>',0,0,1);
+I[44]=new Array();I[44][0]=100;
+I[44][1]='';
+I[44][2]='0';
+I[44][3]=new Array();
+I[44][3][0]=new Array('Yes','Moon rises everyday on the sky. The New Moon is when the Sun and Moon are aligned, with the Sun and Earth on opposite sides of the Moon.<br><img src="https://c.tadst.com/gfx/900x506/new-moon-phase.png?1" width="100" height="100"/>',1,100,1);
+I[44][3][1]=new Array('No','Moon rises everyday on the sky. The New Moon is when the Sun and Moon are aligned, with the Sun and Earth on opposite sides of the Moon.<br><img src="https://c.tadst.com/gfx/900x506/new-moon-phase.png?1" width="100" height="100"/>',0,0,1);
+I[45]=new Array();I[45][0]=100;
+I[45][1]='';
+I[45][2]='0';
+I[45][3]=new Array();
+I[45][3][0]=new Array('Yes','Your weight is less on the equator than at the North or South Pole, but the difference is small. Note that your body itself does not change. Rather it is the force of gravity and other forces that change as you approach the poles.',1,100,1);
+I[45][3][1]=new Array('No','Your weight is less on the equator than at the North or South Pole, but the difference is small. Note that your body itself does not change. Rather it is the force of gravity and other forces that change as you approach the poles.',0,0,1);
+I[46]=new Array();I[46][0]=100;
+I[46][1]='';
+I[46][2]='0';
+I[46][3]=new Array();
+I[46][3][0]=new Array('Cassini','Two Voyager spacecrafts has left our solar system. The Voyager 2 probe, which left Earth in 1977, has become the second human-made object to leave our Solar System. It was launched 16 days before its twin craft, Voyager 1, but that probe\'s faster trajectory meant that it was in "the space between the stars" six years before Voyager 2. Both of them enters to <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://solarsystem.nasa.gov/news/784/nasas-voyager-2-probe-enters-interstellar-space/\');return false;">interstellar space.</a>',0,0,1);
+I[46][3][1]=new Array('Voyager','Two Voyager spacecrafts has left our solar system. The Voyager 2 probe, which left Earth in 1977, has become the second human-made object to leave our Solar System. It was launched 16 days before its twin craft, Voyager 1, but that probe\'s faster trajectory meant that it was in "the space between the stars" six years before Voyager 2. Both of them enters to <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://solarsystem.nasa.gov/news/784/nasas-voyager-2-probe-enters-interstellar-space/\');return false;">interstellar space.</a>',1,100,1);
+I[46][3][2]=new Array('Juno','Two Voyager spacecrafts has left our solar system. The Voyager 2 probe, which left Earth in 1977, has become the second human-made object to leave our Solar System. It was launched 16 days before its twin craft, Voyager 1, but that probe\'s faster trajectory meant that it was in "the space between the stars" six years before Voyager 2. Both of them enters to <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://solarsystem.nasa.gov/news/784/nasas-voyager-2-probe-enters-interstellar-space/\');return false;">interstellar space.</a>',0,0,1);
+I[46][3][3]=new Array('New Horizon','Two Voyager spacecrafts has left our solar system. The Voyager 2 probe, which left Earth in 1977, has become the second human-made object to leave our Solar System. It was launched 16 days before its twin craft, Voyager 1, but that probe\'s faster trajectory meant that it was in "the space between the stars" six years before Voyager 2. Both of them enters to <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://solarsystem.nasa.gov/news/784/nasas-voyager-2-probe-enters-interstellar-space/\');return false;">interstellar space.</a>',0,0,1);
+I[47]=new Array();I[47][0]=100;
+I[47][1]='';
+I[47][2]='0';
+I[47][3]=new Array();
+I[47][3][0]=new Array('Rosetta','On 12 November, the lander module Philae of Rosetta, performed the first successful landing on a comet, though its battery power ran out two days later. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=mggUVLFPkQg\');return false;">Click here to see the landing.</a>',1,100,1);
+I[47][3][1]=new Array('Cassini','On 12 November, the lander module Philae of Rosetta, performed the first successful landing on a comet, though its battery power ran out two days later. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=mggUVLFPkQg\');return false;">Click here to see the landing.</a>',0,0,1);
+I[47][3][2]=new Array('Juno','On 12 November, the lander module Philae of Rosetta, performed the first successful landing on a comet, though its battery power ran out two days later. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=mggUVLFPkQg\');return false;">Click here to see the landing.</a>',0,0,1);
+I[47][3][3]=new Array('New Horizon','On 12 November, the lander module Philae of Rosetta, performed the first successful landing on a comet, though its battery power ran out two days later. <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://www.youtube.com/watch?v=mggUVLFPkQg\');return false;">Click here to see the landing.</a>',0,0,1);
+I[48]=new Array();I[48][0]=100;
+I[48][1]='';
+I[48][2]='0';
+I[48][3]=new Array();
+I[48][3][0]=new Array('Jupiter','Saturn has largest number of Moons. It has total 82 moons and more is still being discovered. Jupiter has second large number of moon, total 79. If you want to more about moons of other planets, <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://solarsystem.nasa.gov/moons/in-depth/\');return false;">click here.</a>',0,0,1);
+I[48][3][1]=new Array('Saturn','Saturn has largest number of Moons. It has total 82 moons and more is still being discovered. Jupiter has second large number of moon, total 79. If you want to more about moons of other planets, <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://solarsystem.nasa.gov/moons/in-depth/\');return false;">click here.</a>',1,100,1);
+I[48][3][2]=new Array('Uranus','Saturn has largest number of Moons. It has total 82 moons and more is still being discovered. Jupiter has second large number of moon, total 79. If you want to more about moons of other planets, <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://solarsystem.nasa.gov/moons/in-depth/\');return false;">click here.</a>',0,0,1);
+I[48][3][3]=new Array('Neptune','Saturn has largest number of Moons. It has total 82 moons and more is still being discovered. Jupiter has second large number of moon, total 79. If you want to more about moons of other planets, <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://solarsystem.nasa.gov/moons/in-depth/\');return false;">click here.</a>',0,0,1);
+I[49]=new Array();I[49][0]=100;
+I[49][1]='';
+I[49][2]='0';
+I[49][3]=new Array();
+I[49][3][0]=new Array('Ganymede','Ganymede is the largest moon in the solar system (larger than the planet Mercury), and is the only moon known to have its own internally generated magnetic field.  If you want to more about moons of other planets, <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://solarsystem.nasa.gov/moons/in-depth/\');return false;">click here.</a>',1,100,1);
+I[49][3][1]=new Array('Io','Ganymede is the largest moon in the solar system (larger than the planet Mercury), and is the only moon known to have its own internally generated magnetic field.  If you want to more about moons of other planets, <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://solarsystem.nasa.gov/moons/in-depth/\');return false;">click here.</a>',0,0,1);
+I[49][3][2]=new Array('Juno','Ganymede is the largest moon in the solar system (larger than the planet Mercury), and is the only moon known to have its own internally generated magnetic field.  If you want to more about moons of other planets, <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://solarsystem.nasa.gov/moons/in-depth/\');return false;">click here.</a>',0,0,1);
+I[49][3][3]=new Array('Titan','Ganymede is the largest moon in the solar system (larger than the planet Mercury), and is the only moon known to have its own internally generated magnetic field.  If you want to more about moons of other planets, <a style="cursor: pointer; text-decoration: underline;" onclick="window.open(\'https://solarsystem.nasa.gov/moons/in-depth/\');return false;">click here.</a>',0,0,1);
+
+function StartUp(){
+
+//If there's only one question, no need for question navigation controls
+	if (QsToShow < 2){
+		document.getElementById('QNav').style.display = 'none';
+	}
+	
+//Stash the instructions so they can be redisplayed
+	strInstructions = document.getElementById('InstructionsDiv').innerHTML;
+	
+
+
+
+	PreloadImages('https://s.w-x.co/util/image/w/in-marsplanet.jpg?v=at&w=400&h=400','https://static01.nyt.com/images/2020/09/22/science/19SCI-OUTTHERE-VENUS1/19SCI-OUTTHERE-VENUS1-mediumSquareAt3X.jpg','https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Mercury_in_true_color.jpg/330px-Mercury_in_true_color.jpg','https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/330px-FullMoon2010.jpg','https://tse1.mm.bing.net/th?id=OIP.8I66h2HceqityyG8jalYlQHaEo&pid=Api&P=0&w=316&h=197','https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/NASA-Apollo8-Dec24-Earthrise.jpg/800px-NASA-Apollo8-Dec24-Earthrise.jpg','https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/330px-OSIRIS_Mars_true_color.jpg','https://media.nationalgeographic.org/assets/photos/000/261/26166.jpg','https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg/450px-Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMJixMFMZimVVJFNtqs69WomzRqcsoZ4iERQ&usqp=CAU','https://www.sciencealert.com/images/2020-06/saturn-hexagon-false-colour.jpg','https://www.universetoday.com/wp-content/uploads/2010/01/Io_Feat-e1433786196804.jpg','https://www.scienceabc.com/wp-content/uploads/2019/08/3d-rendered-illustration-of-the-mars-olympus-mons-Illustration-Sebastian-KaulitzkiS.jpg','https://nineplanets.org/wp-content/uploads/2020/09/318-Earth-masses.jpg','https://c.tadst.com/gfx/900x506/new-moon-phase.png?1');
+
+	//ScormStartUp();
+
+	CompleteEmptyFeedback();
+
+	SetUpQuestions();
+	ClearTextBoxes();
+	CreateStatusArray();
+	
+
+	//setTimeout('StartTimer()', 50);
+
+	
+//Check search string for q parameter
+	if (document.location.search.length > 0){
+		if (ShuffleQs == false){
+			var JumpTo = parseInt(document.location.search.substring(1,document.location.search.length))-1;
+			if (JumpTo <= QsToShow){
+				ChangeQ(JumpTo);
+			}
+		}
+	}
+//Undocumented function added 10/12/2004
+	ShowSpecialReadingForQuestion();
+}
+
+function ShowHideQuestions(){
+	document.getElementById('ShowMethodButton').style.display = 'none';
+	if (ShowingAllQuestions == false){
+		for (var i=0; i<QArray.length; i++){
+				QArray[i].style.display = '';
+			}
+		document.getElementById('Questions').style.listStyleType = 'decimal';
+		document.getElementById('OneByOneReadout').style.display = 'none';
+		document.getElementById('ShowMethodButton').innerHTML = ShowOneByOneCaption;
+		ShowingAllQuestions = true;
+	}
+	else{
+		for (var i=0; i<QArray.length; i++){
+				if (i != CurrQNum){
+					QArray[i].style.display = 'none';
+				}
+			}
+		document.getElementById('Questions').style.listStyleType = 'none';
+		document.getElementById('OneByOneReadout').style.display = '';
+		document.getElementById('ShowMethodButton').innerHTML = ShowAllQuestionsCaption;
+		ShowingAllQuestions = false;	
+	}
+	document.getElementById('ShowMethodButton').style.display = 'inline';
+}
+
+function ShowHideQuestionsatEnd(){
+	//WriteToInstructions(CompletedSoFar + ' ' + QsCompleted + ' out of ' + QArray.length);
+	if (ShowingAllQuestions == false){
+		for (var i=0; i<QArray.length; i++){
+				QArray[i].style.display = '';
+			}
+		ShowingAllQuestions = true;
+	}
+	else{
+		for (var i=0; i<QArray.length; i++){
+				if (i != CurrQNum){
+					QArray[i].style.display = 'none';
+				}
+			}
+		ShowingAllQuestions = false;	
+	}
+}
+
+function CreateStatusArray(){
+	var QNum, ANum;
+//For each item in the item array
+	for (QNum=0; QNum<I.length; QNum++){
+//Check if the question still exists (hasn't been nuked by showing a random selection)
+		if (document.getElementById('Q_' + QNum) != null){
+			State[QNum] = new Array();
+			State[QNum][0] = -1; //Score for this q; -1 shows question not done yet
+			State[QNum][1] = new Array(); //answers
+			for (ANum = 0; ANum<I[QNum][3].length; ANum++){
+				State[QNum][1][ANum] = 0; //answer not chosen yet; when chosen, will store its position in the series of choices
+			}
+			State[QNum][2] = 0; //tries at this q so far
+			State[QNum][3] = 0; //incrementing percent-correct values of selected answers
+			State[QNum][4] = 0; //penalties incurred for hints
+			State[QNum][5] = ''; //Sequence of answers chosen by number
+		}
+		else{
+			State[QNum] = null;
+		}
+	}
+}
+
+
+
+function CheckMCAnswer(QNum, ANum, Btn){
+//if question doesn't exist, bail
+	if (State[QNum].length < 1){return;}
+	
+//Get the feedback
+	Feedback = I[QNum][3][ANum][1];
+	
+//Now show feedback and bail if question already complete
+	if (State[QNum][0] > -1){
+//Add an extra message explaining that the question
+// is finished if defined by the user
+		if (strQuestionFinished.length > 0){Feedback += '<br />' + strQuestionFinished;}
+//Show the feedback
+		ShowMessage(Feedback);
+//New for 6.2.2.1: If you want to mark an answer as correct even when it's the final choice, uncomment this line.
+//		if (I[QNum][3][ANum][2] >= 1){Btn.innerHTML = CorrectIndicator;}else{Btn.innerHTML = IncorrectIndicator;}	
+		return;
+	}
+	
+//Hide the button while processing
+	Btn.style.display = 'none';
+
+//Increment the number of tries
+	State[QNum][2]++;
+	
+//Add the percent-correct value of this answer
+	State[QNum][3] += I[QNum][3][ANum][3];
+	
+//Store the try number in the answer part of the State array, for tracking purposes
+	State[QNum][1][ANum] = State[QNum][2];
+	if (State[QNum][5].length > 0){State[QNum][5] += ' | ';}
+	State[QNum][5] += String.fromCharCode(65+ANum);
+	
+//Should this answer be accepted as correct?
+	if (I[QNum][3][ANum][2] < 1){
+//It's wrong
+
+//Mark the answer
+		Btn.innerHTML = IncorrectIndicator;
+		
+//Remove any previous score unless exercise is finished (6.0.3.8+)
+		if (Finished == false){
+			WriteToInstructions(strInstructions);
+		}	
+		
+//Check whether this leaves just one MC answer unselected, in which case the Q is terminated
+		var RemainingAnswer = FinalAnswer(QNum);
+		if (RemainingAnswer > -1){
+//Behave as if the last answer had been selected, but give no credit for it
+//Increment the number of tries
+			//State[QNum][2]++;		
+		
+//Calculate the score for this question
+			CalculateMCQuestionScore(QNum);
+			
+//Get the overall score and add it to the feedback
+			CalculateOverallScore();
+//New for 6.2.2.1
+			QsDone = CheckQuestionsCompleted();
+			if ((ContinuousScoring == true)||(Finished == true)){
+				Feedback += '<br />' + YourScoreIs + ' ' + Score + ' out of 5' + '<br />' + QsDone;
+				WriteToInstructions(YourScoreIs + ' ' + Score + ' out of 5' + '<br />' + QsDone);
+			}
+			else{
+				WriteToInstructions(QsDone);
+			}
+		}
+	if (typeof(QsDone) == 'undefined'){
+		WriteToInstructions(YourScoreIs + ' ' + Score + ' out of 5' + '<br />'+'0 out of 4');
+	}
+	else{
+		WriteToInstructions(YourScoreIs + ' ' + Score + ' out of 5' + '<br />' + QsDone);
+		}
+	}
+	else{
+//It's right
+//Mark the answer
+		Btn.innerHTML = CorrectIndicator;
+				
+//Calculate the score for this question
+		CalculateMCQuestionScore(QNum);
+		
+//New for 6.2.2.0
+		QsDone = CheckQuestionsCompleted();
+
+//Get the overall score and add it to the feedback
+		if (ContinuousScoring == true){
+			CalculateOverallScore();
+			if ((ContinuousScoring == true)||(Finished == true)){
+				Feedback += '<br />' + YourScoreIs + ' ' + Score +  'out of 5.' + '<br />' + QsDone;
+				WriteToInstructions(YourScoreIs + ' ' + Score + ' out of 5' + '<br />' + QsDone);
+			}
+		}
+		else{
+			WriteToInstructions(QsDone);
+		}
+	}
+	
+//Show the button again
+	Btn.style.display = 'inline';
+	
+//Finally, show the feedback	
+	ShowMessage(Feedback);	
+	
+	
+//Check whether all questions are now done
+	CheckFinished();
+	//console.log(AllDone);
+	if (CurrQNum==4){
+		SubmitQuiz();
+	}
+}
+
+function CalculateMCQuestionScore(QNum){
+	var Tries = State[QNum][2] + State[QNum][4]; //include tries and hint penalties
+	var PercentCorrect = State[QNum][3];
+	var TotAns = GetTotalMCAnswers(QNum);
+	var HintPenalties = State[QNum][4];
+	
+//Make sure it's not already complete
+
+	if (State[QNum][0] < 0){
+//Allow for Hybrids
+		if (HintPenalties >= 1){
+			State[QNum][0] = 0;
+		}
+		else{
+//This line calculates the score for this question
+			State[QNum][0] = 1;
+			//if (TotAns == 1){
+			//	State[QNum][0] = 1;
+			//}
+			//else{
+				State[QNum][0] = ((TotAns-((Tries*100)/State[QNum][3]))/(TotAns-1));
+			//}
+		}
+//Fix for Safari bug added for version 6.0.3.42 (negative infinity problem)
+		if ((State[QNum][0] < 0)||(State[QNum][0] == Number.NEGATIVE_INFINITY)){
+			State[QNum][0] = 0;
+		}
+	}
+}
+
+function GetTotalMCAnswers(QNum){
+	var Result = 0;
+	for (var ANum=0; ANum<I[QNum][3].length; ANum++){
+		if (I[QNum][3][ANum][4] == 1){ //This is an MC answer
+			Result++;
+		}
+	}
+	return Result;
+}
+
+function FinalAnswer(QNum){
+	var UnchosenAnswers = 0;
+	var FinalAnswer = -1;
+	for (var ANum=0; ANum<I[QNum][3].length; ANum++){
+		if (I[QNum][3][ANum][4] == 1){ //This is an MC answer
+			if (State[QNum][1][ANum] < 1){ //This answer hasn't been chosen yet
+				UnchosenAnswers++;
+				FinalAnswer = ANum;
+			}
+		}
+	}
+	if (UnchosenAnswers == 1){
+		return FinalAnswer;
+	}
+	else{
+		return -1;
+	}
+}
+
+
+
+
+
+function CalculateOverallScore(){
+	var TotalWeighting = 0;
+	var TotalScore = 0;
+	
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] > -1){
+				TotalWeighting += I[QNum][0];
+				TotalScore += (State[QNum][0]);
+			}
+		}
+	}
+	if (TotalWeighting > 0){
+		Score = TotalScore;//Math.floor((TotalScore/TotalWeighting)*100);
+	}
+	else{
+//if TotalWeighting is 0, no questions so far have any value, so 
+//no penalty should be shown.
+		Score = 100; 
+	}
+}
+
+//New for 6.2.2.0
+function CheckQuestionsCompleted(){
+	if (ShowCompletedSoFar == false){return '';}
+	var QsCompleted = 0;
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] >= 0){
+				QsCompleted++;
+			}
+		}
+	}
+//Fixes for 6.2.2.2
+	if (QsCompleted >= QArray.length){
+		return ExerciseCompleted;
+	}
+	else{
+		return CompletedSoFar + ' ' + QsCompleted + ' out of ' + QArray.length ;
+	}
+}
+
+function CheckFinished(){
+	var FB = '';
+	var AllDone = true;
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] < 0){
+				AllDone = false;
+			}
+		}
+	}
+	if (AllDone == true){
+	
+//Report final score and submit if necessary
+		CalculateOverallScore();
+		FB = 'Your final score is ' + Score +' out of 5';
+		if (ShowCorrectFirstTime == true){
+			var CFT = 0;
+			for (QNum=0; QNum<State.length; QNum++){
+				if (State[QNum] != null){
+					if (State[QNum][0] >= 1){
+						CFT++;
+					}
+				}
+			}
+			FB += '<br />' + CorrectFirstTime + ' ' + CFT + '/' + QsToShow;
+		}
+		
+//New for 6.2.2.0
+		FB += '<br />' + ExerciseCompleted;
+		
+		WriteToInstructions(FB);
+		
+		Finished == true;
+
+		window.clearInterval(Interval);
+
+
+
+		if (TimeOver == true){
+			SetScormTimedOut();
+		}
+		else{
+			SetScormComplete();
+		}
+
+
+		TimeOver = true;
+		Locked = true;
+		
+
+
+		Finished = true;
+		Detail = '<?xml version="1.0"?><hpnetresult><fields>';
+		for (QNum=0; QNum<State.length; QNum++){
+			if (State[QNum] != null){
+				if (State[QNum][5].length > 0){
+					Detail += '<field><fieldname>Question #' + (QNum+1) + '</fieldname><fieldtype>question-tracking</fieldtype><fieldlabel>Q ' + (QNum+1) + '</fieldlabel><fieldlabelid>QuestionTrackingField</fieldlabelid><fielddata>' + State[QNum][5] + '</fielddata></field>';
+				}
+			}
+		}
+		Detail += '</fields></hpnetresult>';
+	}
+
+	else{
+		SetScormIncomplete();
+	}
+
+}
+
+
+function TimesUp(){
+	document.getElementById('Timer').innerHTML = 'Your time is over!';
+
+	TimeOver = true;
+	Finished = true;
+	//ShowMessage('Your time is over!');
+	
+//Set all remaining scores to 0
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] < 0){
+				State[QNum][0] = 0;
+			}
+		}
+	}
+	CheckFinished();
+	SubmitQuiz();
+}
+
+function closebyid(id){
+	var elem = document.getElementById(id);
+	console.log(elem);
+	elem.parentNode.removeChild(elem);
+	//if (typeof(elem) != 'undefined' && elem != null){
+		
+	//}
+}
+
+function checkedbyid(id){
+	var elem = document.getElementById(id);
+	if (typeof(elem) != 'undefined' && elem != null){
+		elem.checked = true;
+	}
+		
+}
+
+function CompleteEmptyCheckBoxes(){
+	var QNum, ANum, tempid, totalANum;
+	for (QNum=0; QNum<I.length; QNum++){
+		totalANum=I[QNum][3].length;
+  		for (ANum = 0; ANum<totalANum; ANum++){
+		if (I[QNum][3][ANum][2] > 0){
+			tempid='Q_'+QNum.toString()+'_'+ANum.toString()+'_Btn';
+			checkedbyid(tempid);
+		}
+		else{
+		}
+
+  		}
+	}
+}
+
+function SubmitQuiz(){
+	document.getElementById('Timer').innerHTML = '';
+
+	TimeOver = true;
+	Finished = true;
+	//ShowMessage('You have submitted your answers.');
+	
+//Set all remaining scores to 0
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] < 0){
+				State[QNum][0] = 0;
+			}
+		}
+	}
+
+	ShowHideQuestionsatEnd();
+	CheckFinished();
+	CompleteEmptyCheckBoxes();
+	var x = document.querySelectorAll('input[type=radio]');
+	     var i;
+	     for (i = 0; i < x.length; i++) {
+		x[i].disabled = true;
+	     }
+	closebyid('ShowMethodButton');
+	closebyid('QNumReadout');
+	closebyid('NextQButton');
+	closebyid('formABC');
+	closebyid('PrevQButton');
+}
+
+
+//CODE FOR HANDLING TIMER
+//Timer code
+var Seconds = 60;
+var Interval = null;
+
+function StartTimer(){
+	Interval = window.setInterval('DownTime()',1000);
+	document.getElementById('TimerText').style.display = 'inline';
+}
+
+function DownTime(){
+	var ss = Seconds % 60;
+	if (ss<10){
+		ss='0' + ss + '';
+	}
+
+	var mm = Math.floor(Seconds / 60);
+
+	if (document.getElementById('Timer') == null){
+		return;
+	}
+
+	document.getElementById('TimerText').innerHTML = mm + ':' + ss;
+	if (Seconds < 1){
+		window.clearInterval(Interval);
+		TimeOver = true;
+		TimesUp();
+	}
+	Seconds--;
+}
+
+
+
+
+
+
+//-->
+
+//]]>
+
+</script>
+
+
+</head>
+
+<body onload="StartUp()" id="TheBody" onunload="CheckLMSFinish()">
+
+<!-- BeginTopNavButtons -->
+
+
+<div class="NavButtonBar" id="TopNavBar">
+
+
+
+<a style="text-decoration:none" href="http://gmrtscienceday.ncra.tifr.res.in/" target="_blank"> <font face="verdana" size="16">GMRT National Science Day Virtual Exhibit 2022</font></a><br>
+
+<button class="NavButton" onclick="location='intex.htm'; return false;">Next Round</button>
+
+
+</div>
+
+
+
+<!-- EndTopNavButtons -->
+
+<div class="Titles">
+	<h2 class="ExerciseSubtitle">Instructions</h2><h2 class="ExerciseSubtitle">This quiz have unlimited rounds and each rounds have five questions each. Each questions have four options. Click on the button at the left of the option. After clicking a pop window will show whether your answer is correct or not with some interesting trivia for that question. You may read the trivia for more knowledge. Click on continue button to move to the next question. You may also skip question by clicking on next question buttton or also revisit previous questions using previous question button. If you want to stop playing in between, click on submit button. When the quiz ends, it will show all the correct answers by filled circles and your selected options by ovals.</h2>
+
+
+<div id="Timer"><span id="TimerText" style="font-size:10mm"></span></div>
+
+
+</div>
+
+<div id="InstructionsDiv" class="StdDiv">
+	<div id="Instructions"> </div>
+</div>
+
+
+<div id="ContainerDiv">
+
+
+
+<div class="ExerciseContainer">
+
+<div id="QNav" class="QuestionNavigation">
+
+
+<div id="OneByOneReadout">
+<button id="PrevQButton" class="FuncButton" onclick="ChangeQ(-1); return false;" name="prequestion">Previous Question</button>
+
+<span id="QNumReadout" class="QNum" style="color:#406378; font-size: 150%"></span>
+
+<button id="NextQButton" class="FuncButton" onclick="ChangeQ(1); return false; " name="nextquestion">Next Question</button>
+<br />
+</div>
+
+</div>
+ 
+<ol class="QuizQuestions" id="Questions">
+<li class="QuizQuestion" id="Q_0" style="display: none;"><div class="QuestionText">What is the name of the 5th planet in our solar system?</div><ol class="MCAnswers"><li id="Q_0_0"><input type="radio" id="Q_0_0_Btn" onclick="CheckMCAnswer(0,0,this)">Mercury</li><li id="Q_0_1"><input type="radio" id="Q_0_1_Btn" onclick="CheckMCAnswer(0,1,this)">Mars</li><li id="Q_0_2"><input type="radio" id="Q_0_2_Btn" onclick="CheckMCAnswer(0,2,this)">Saturn</li><li id="Q_0_3"><input type="radio" id="Q_0_3_Btn" onclick="CheckMCAnswer(0,3,this)">Jupiter</li></ol></li>
+<li class="QuizQuestion" id="Q_1" style="display: none;"><div class="QuestionText">How does a solar eclipse occur?</div><ol class="MCAnswers"><li id="Q_1_0"><input type="radio" id="Q_1_0_Btn" onclick="CheckMCAnswer(1,0,this)">Sun comes between the Moon and Earth</li><li id="Q_1_1"><input type="radio" id="Q_1_1_Btn" onclick="CheckMCAnswer(1,1,this)">Earth comes between the Moon and Sun</li><li id="Q_1_2"><input type="radio" id="Q_1_2_Btn" onclick="CheckMCAnswer(1,2,this)">Sun is hidden by the Earth's shadow</li><li id="Q_1_3"><input type="radio" id="Q_1_3_Btn" onclick="CheckMCAnswer(1,3,this)">Moon comes between the Sun and Earth</li></ol></li>
+<li class="QuizQuestion" id="Q_2" style="display: none;"><div class="QuestionText">Who discovered Earth rotates around the Sun?</div><ol class="MCAnswers"><li id="Q_2_0"><input type="radio" id="Q_2_0_Btn" onclick="CheckMCAnswer(2,0,this)">Galileo Galilei</li><li id="Q_2_1"><input type="radio" id="Q_2_1_Btn" onclick="CheckMCAnswer(2,1,this)">Nicolaus Copernicus</li><li id="Q_2_2"><input type="radio" id="Q_2_2_Btn" onclick="CheckMCAnswer(2,2,this)">Johannes Kepler</li><li id="Q_2_3"><input type="radio" id="Q_2_3_Btn" onclick="CheckMCAnswer(2,3,this)">Ptolemy</li></ol></li>
+<li class="QuizQuestion" id="Q_3" style="display: none;"><div class="QuestionText">Who proposed that planets move in elliptical orbits?</div><ol class="MCAnswers"><li id="Q_3_0"><input type="radio" id="Q_3_0_Btn" onclick="CheckMCAnswer(3,0,this)">Nicolaus Copernicus</li><li id="Q_3_1"><input type="radio" id="Q_3_1_Btn" onclick="CheckMCAnswer(3,1,this)">Johannes Kepler</li><li id="Q_3_2"><input type="radio" id="Q_3_2_Btn" onclick="CheckMCAnswer(3,2,this)">Galileo Galilei</li><li id="Q_3_3"><input type="radio" id="Q_3_3_Btn" onclick="CheckMCAnswer(3,3,this)">Ptolemy</li></ol></li>
+<li class="QuizQuestion" id="Q_4" style="display: none;"><div class="QuestionText">What is the size of the Moon relative to Earth?</div><ol class="MCAnswers"><li id="Q_4_0"><input type="radio" id="Q_4_0_Btn" onclick="CheckMCAnswer(4,0,this)">1/4</li><li id="Q_4_1"><input type="radio" id="Q_4_1_Btn" onclick="CheckMCAnswer(4,1,this)">1/5</li><li id="Q_4_2"><input type="radio" id="Q_4_2_Btn" onclick="CheckMCAnswer(4,2,this)">1/3</li><li id="Q_4_3"><input type="radio" id="Q_4_3_Btn" onclick="CheckMCAnswer(4,3,this)">1/6</li></ol></li>
+<li class="QuizQuestion" id="Q_5" style="display: none;"><div class="QuestionText">What fraction of Earth's gravity does the moon have?</div><ol class="MCAnswers"><li id="Q_5_0"><input type="radio" id="Q_5_0_Btn" onclick="CheckMCAnswer(5,0,this)">1/4</li><li id="Q_5_1"><input type="radio" id="Q_5_1_Btn" onclick="CheckMCAnswer(5,1,this)">1/5</li><li id="Q_5_2"><input type="radio" id="Q_5_2_Btn" onclick="CheckMCAnswer(5,2,this)">1/6</li><li id="Q_5_3"><input type="radio" id="Q_5_3_Btn" onclick="CheckMCAnswer(5,3,this)">1/9</li></ol></li>
+<li class="QuizQuestion" id="Q_6" style="display: none;"><div class="QuestionText">What is the difference between ``Meteoroids" and ``Meteorites"?</div><ol class="MCAnswers"><li id="Q_6_0"><input type="radio" id="Q_6_0_Btn" onclick="CheckMCAnswer(6,0,this)">Meteoroids are 'space rocks once they hit Earth</li><li id="Q_6_1"><input type="radio" id="Q_6_1_Btn" onclick="CheckMCAnswer(6,1,this)">Meteorites are 'space rocks' once they hit Earth</li><li id="Q_6_2"><input type="radio" id="Q_6_2_Btn" onclick="CheckMCAnswer(6,2,this)">Both are the same</li><li id="Q_6_3"><input type="radio" id="Q_6_3_Btn" onclick="CheckMCAnswer(6,3,this)">Meteoroids are made of rocks and meteorites are made of ice.</li></ol></li>
+<li class="QuizQuestion" id="Q_7" style="display: none;"><div class="QuestionText"> What are comets mainly composed of ? </div><ol class="MCAnswers"><li id="Q_7_0"><input type="radio" id="Q_7_0_Btn" onclick="CheckMCAnswer(7,0,this)">Ice and Rocks</li><li id="Q_7_1"><input type="radio" id="Q_7_1_Btn" onclick="CheckMCAnswer(7,1,this)">Liquid Water and Ice</li><li id="Q_7_2"><input type="radio" id="Q_7_2_Btn" onclick="CheckMCAnswer(7,2,this)">Hydrogen gas and Rocks</li><li id="Q_7_3"><input type="radio" id="Q_7_3_Btn" onclick="CheckMCAnswer(7,3,this)">Liquid Methene</li></ol></li>
+<li class="QuizQuestion" id="Q_8" style="display: none;"><div class="QuestionText">What is the nearest star to the Sun?</div><ol class="MCAnswers"><li id="Q_8_0"><input type="radio" id="Q_8_0_Btn" onclick="CheckMCAnswer(8,0,this)">Sirius A</li><li id="Q_8_1"><input type="radio" id="Q_8_1_Btn" onclick="CheckMCAnswer(8,1,this)">Proxima Centauri</li><li id="Q_8_2"><input type="radio" id="Q_8_2_Btn" onclick="CheckMCAnswer(8,2,this)">Alpha Centauri</li><li id="Q_8_3"><input type="radio" id="Q_8_3_Btn" onclick="CheckMCAnswer(8,3,this)">Pole Star</li></ol></li>
+<li class="QuizQuestion" id="Q_9" style="display: none;"><div class="QuestionText">Which are the two planets between which asteroid belt located?</div><ol class="MCAnswers"><li id="Q_9_0"><input type="radio" id="Q_9_0_Btn" onclick="CheckMCAnswer(9,0,this)">Mars and Jupiter</li><li id="Q_9_1"><input type="radio" id="Q_9_1_Btn" onclick="CheckMCAnswer(9,1,this)">Earth and Venus</li><li id="Q_9_2"><input type="radio" id="Q_9_2_Btn" onclick="CheckMCAnswer(9,2,this)">Earth and Mars</li><li id="Q_9_3"><input type="radio" id="Q_9_3_Btn" onclick="CheckMCAnswer(9,3,this)">Jupiter and Saturn</li></ol></li>
+<li class="QuizQuestion" id="Q_10" style="display: none;"><div class="QuestionText">Which one is the Mars?</div><ol class="MCAnswers"><li id="Q_10_0"><input type="radio" id="Q_10_0_Btn" onclick="CheckMCAnswer(10,0,this)"><img src="https://s.w-x.co/util/image/w/in-marsplanet.jpg?v=at&w=400&h=400" width="100" height="100"/></li><li id="Q_10_1"><input type="radio" id="Q_10_1_Btn" onclick="CheckMCAnswer(10,1,this)"><img src="https://static01.nyt.com/images/2020/09/22/science/19SCI-OUTTHERE-VENUS1/19SCI-OUTTHERE-VENUS1-mediumSquareAt3X.jpg" width="100" height="100"/></li><li id="Q_10_2"><input type="radio" id="Q_10_2_Btn" onclick="CheckMCAnswer(10,2,this)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Mercury_in_true_color.jpg/330px-Mercury_in_true_color.jpg" width="100" height="100"/></li><li id="Q_10_3"><input type="radio" id="Q_10_3_Btn" onclick="CheckMCAnswer(10,3,this)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/330px-FullMoon2010.jpg" width="100" height="100"/></li></ol></li>
+<li class="QuizQuestion" id="Q_11" style="display: none;"><div class="QuestionText">Pluto is a</div><ol class="MCAnswers"><li id="Q_11_0"><input type="radio" id="Q_11_0_Btn" onclick="CheckMCAnswer(11,0,this)">Planet</li><li id="Q_11_1"><input type="radio" id="Q_11_1_Btn" onclick="CheckMCAnswer(11,1,this)">Moon</li><li id="Q_11_2"><input type="radio" id="Q_11_2_Btn" onclick="CheckMCAnswer(11,2,this)">Dwarf Planet</li><li id="Q_11_3"><input type="radio" id="Q_11_3_Btn" onclick="CheckMCAnswer(11,3,this)">Astroid</li></ol></li>
+<li class="QuizQuestion" id="Q_12" style="display: none;"><div class="QuestionText">Electromagnetic spectrum in increasing order of wavelength</div><ol class="MCAnswers"><li id="Q_12_0"><input type="radio" id="Q_12_0_Btn" onclick="CheckMCAnswer(12,0,this)">Gamma-ray, UV, Visible, Infrared</li><li id="Q_12_1"><input type="radio" id="Q_12_1_Btn" onclick="CheckMCAnswer(12,1,this)">Visible, Gamma-ray, X-ray, Radio</li><li id="Q_12_2"><input type="radio" id="Q_12_2_Btn" onclick="CheckMCAnswer(12,2,this)">Infrared, Radio, Microwave, Visible</li><li id="Q_12_3"><input type="radio" id="Q_12_3_Btn" onclick="CheckMCAnswer(12,3,this)">X-ray, Infrared, Visible, Radio</li></ol></li>
+<li class="QuizQuestion" id="Q_13" style="display: none;"><div class="QuestionText">What is the fuel of most of the stars?</div><ol class="MCAnswers"><li id="Q_13_0"><input type="radio" id="Q_13_0_Btn" onclick="CheckMCAnswer(13,0,this)">Hydrogen fusion in their cores</li><li id="Q_13_1"><input type="radio" id="Q_13_1_Btn" onclick="CheckMCAnswer(13,1,this)">Uranium fusion in their cores</li><li id="Q_13_2"><input type="radio" id="Q_13_2_Btn" onclick="CheckMCAnswer(13,2,this)">Hydrogen burning in their cores</li><li id="Q_13_3"><input type="radio" id="Q_13_3_Btn" onclick="CheckMCAnswer(13,3,this)">Oxyogen burning in their cores</li></ol></li>
+<li class="QuizQuestion" id="Q_14" style="display: none;"><div class="QuestionText">What is our own galaxy?</div><ol class="MCAnswers"><li id="Q_14_0"><input type="radio" id="Q_14_0_Btn" onclick="CheckMCAnswer(14,0,this)">Milky Way</li><li id="Q_14_1"><input type="radio" id="Q_14_1_Btn" onclick="CheckMCAnswer(14,1,this)">M87</li><li id="Q_14_2"><input type="radio" id="Q_14_2_Btn" onclick="CheckMCAnswer(14,2,this)">Andromed</li><li id="Q_14_3"><input type="radio" id="Q_14_3_Btn" onclick="CheckMCAnswer(14,3,this)">Small Magellanic Cloud</li></ol></li>
+<li class="QuizQuestion" id="Q_15" style="display: none;"><div class="QuestionText">How are the stars formed?</div><ol class="MCAnswers"><li id="Q_15_0"><input type="radio" id="Q_15_0_Btn" onclick="CheckMCAnswer(15,0,this)">Gravitational accumulation of gas and dust</li><li id="Q_15_1"><input type="radio" id="Q_15_1_Btn" onclick="CheckMCAnswer(15,1,this)">By colliding planets</li><li id="Q_15_2"><input type="radio" id="Q_15_2_Btn" onclick="CheckMCAnswer(15,2,this)">By colliding gas and dust clouds</li><li id="Q_15_3"><input type="radio" id="Q_15_3_Btn" onclick="CheckMCAnswer(15,3,this)">Condensation of hydrogen gas</li></ol></li>
+<li class="QuizQuestion" id="Q_16" style="display: none;"><div class="QuestionText">What is the age of the observable universe approximately?</div><ol class="MCAnswers"><li id="Q_16_0"><input type="radio" id="Q_16_0_Btn" onclick="CheckMCAnswer(16,0,this)">12 billion years</li><li id="Q_16_1"><input type="radio" id="Q_16_1_Btn" onclick="CheckMCAnswer(16,1,this)">10 billion years</li><li id="Q_16_2"><input type="radio" id="Q_16_2_Btn" onclick="CheckMCAnswer(16,2,this)">14 billion years</li><li id="Q_16_3"><input type="radio" id="Q_16_3_Btn" onclick="CheckMCAnswer(16,3,this)">11 billion years</li></ol></li>
+<li class="QuizQuestion" id="Q_17" style="display: none;"><div class="QuestionText">How old is the Sun?</div><ol class="MCAnswers"><li id="Q_17_0"><input type="radio" id="Q_17_0_Btn" onclick="CheckMCAnswer(17,0,this)">4.6 million years</li><li id="Q_17_1"><input type="radio" id="Q_17_1_Btn" onclick="CheckMCAnswer(17,1,this)">4.6 billion years</li><li id="Q_17_2"><input type="radio" id="Q_17_2_Btn" onclick="CheckMCAnswer(17,2,this)">6.4 billion years</li><li id="Q_17_3"><input type="radio" id="Q_17_3_Btn" onclick="CheckMCAnswer(17,3,this)">6.4 million years</li></ol></li>
+<li class="QuizQuestion" id="Q_18" style="display: none;"><div class="QuestionText">How old is the Earth?</div><ol class="MCAnswers"><li id="Q_18_0"><input type="radio" id="Q_18_0_Btn" onclick="CheckMCAnswer(18,0,this)">5.4 million years</li><li id="Q_18_1"><input type="radio" id="Q_18_1_Btn" onclick="CheckMCAnswer(18,1,this)">4.5 billion years</li><li id="Q_18_2"><input type="radio" id="Q_18_2_Btn" onclick="CheckMCAnswer(18,2,this)">4.5 million years</li><li id="Q_18_3"><input type="radio" id="Q_18_3_Btn" onclick="CheckMCAnswer(18,3,this)">5.4 billion years</li></ol></li>
+<li class="QuizQuestion" id="Q_19" style="display: none;"><div class="QuestionText">If a planet goes very near a black hole it will....</div><ol class="MCAnswers"><li id="Q_19_0"><input type="radio" id="Q_19_0_Btn" onclick="CheckMCAnswer(19,0,this)">Get sucked in by its gravity</li><li id="Q_19_1"><input type="radio" id="Q_19_1_Btn" onclick="CheckMCAnswer(19,1,this)">Orbit around it faster and faster until it reaches the speed of light</li><li id="Q_19_2"><input type="radio" id="Q_19_2_Btn" onclick="CheckMCAnswer(19,2,this)">Get torn apart by tidal forces while orbiting it</li><li id="Q_19_3"><input type="radio" id="Q_19_3_Btn" onclick="CheckMCAnswer(19,3,this)">Become a star</li></ol></li>
+<li class="QuizQuestion" id="Q_20" style="display: none;"><div class="QuestionText">How the size of universe is changing?</div><ol class="MCAnswers"><li id="Q_20_0"><input type="radio" id="Q_20_0_Btn" onclick="CheckMCAnswer(20,0,this)">Contracting</li><li id="Q_20_1"><input type="radio" id="Q_20_1_Btn" onclick="CheckMCAnswer(20,1,this)">Expanding</li><li id="Q_20_2"><input type="radio" id="Q_20_2_Btn" onclick="CheckMCAnswer(20,2,this)">Not changing</li><li id="Q_20_3"><input type="radio" id="Q_20_3_Btn" onclick="CheckMCAnswer(20,3,this)">Oscillating</li></ol></li>
+<li class="QuizQuestion" id="Q_21" style="display: none;"><div class="QuestionText">How do you differentiate between planets and stars with the naked eye?<br /></div><ol class="MCAnswers"><li id="Q_21_0"><input type="radio" id="Q_21_0_Btn" onclick="CheckMCAnswer(21,0,this)">Stars twinkle planets don't</li><li id="Q_21_1"><input type="radio" id="Q_21_1_Btn" onclick="CheckMCAnswer(21,1,this)">Planets twinkle stars don't</li><li id="Q_21_2"><input type="radio" id="Q_21_2_Btn" onclick="CheckMCAnswer(21,2,this)">There is no way to do so</li><li id="Q_21_3"><input type="radio" id="Q_21_3_Btn" onclick="CheckMCAnswer(21,3,this)">Planets are colored while stars are white</li></ol></li>
+<li class="QuizQuestion" id="Q_22" style="display: none;"><div class="QuestionText">How far is the Sun from the center of the Milky Way?</div><ol class="MCAnswers"><li id="Q_22_0"><input type="radio" id="Q_22_0_Btn" onclick="CheckMCAnswer(22,0,this)">8 Kiloparsec</li><li id="Q_22_1"><input type="radio" id="Q_22_1_Btn" onclick="CheckMCAnswer(22,1,this)">8 Megaparsec</li><li id="Q_22_2"><input type="radio" id="Q_22_2_Btn" onclick="CheckMCAnswer(22,2,this)">4 Kiloparsec</li><li id="Q_22_3"><input type="radio" id="Q_22_3_Btn" onclick="CheckMCAnswer(22,3,this)">4 Parsec</li></ol></li>
+<li class="QuizQuestion" id="Q_23" style="display: none;"><div class="QuestionText">Why the stars twinkle in the night sky?</div><ol class="MCAnswers"><li id="Q_23_0"><input type="radio" id="Q_23_0_Btn" onclick="CheckMCAnswer(23,0,this)">Refraction of light through Earth's turbulent atmosphere</li><li id="Q_23_1"><input type="radio" id="Q_23_1_Btn" onclick="CheckMCAnswer(23,1,this)">Reflection of light through Earth's turbulent atmosphere</li><li id="Q_23_2"><input type="radio" id="Q_23_2_Btn" onclick="CheckMCAnswer(23,2,this)">Blinking of eyes</li><li id="Q_23_3"><input type="radio" id="Q_23_3_Btn" onclick="CheckMCAnswer(23,3,this)">Stars brighting and dimming</li></ol></li>
+<li class="QuizQuestion" id="Q_24" style="display: none;"><div class="QuestionText">Who was the first person to land on the moon?</div><ol class="MCAnswers"><li id="Q_24_0"><input type="radio" id="Q_24_0_Btn" onclick="CheckMCAnswer(24,0,this)">Alan Shepard</li><li id="Q_24_1"><input type="radio" id="Q_24_1_Btn" onclick="CheckMCAnswer(24,1,this)">Neil Armstrong</li><li id="Q_24_2"><input type="radio" id="Q_24_2_Btn" onclick="CheckMCAnswer(24,2,this)">Yuri Gagarin</li><li id="Q_24_3"><input type="radio" id="Q_24_3_Btn" onclick="CheckMCAnswer(24,3,this)">Rakesh Sharma</li></ol></li>
+<li class="QuizQuestion" id="Q_25" style="display: none;"><div class="QuestionText">How many moons does Jupiter have?</div><ol class="MCAnswers"><li id="Q_25_0"><input type="radio" id="Q_25_0_Btn" onclick="CheckMCAnswer(25,0,this)">79</li><li id="Q_25_1"><input type="radio" id="Q_25_1_Btn" onclick="CheckMCAnswer(25,1,this)">16</li><li id="Q_25_2"><input type="radio" id="Q_25_2_Btn" onclick="CheckMCAnswer(25,2,this)">26</li><li id="Q_25_3"><input type="radio" id="Q_25_3_Btn" onclick="CheckMCAnswer(25,3,this)">82</li></ol></li>
+<li class="QuizQuestion" id="Q_26" style="display: none;"><div class="QuestionText">What are Saturn's rings made of?</div><ol class="MCAnswers"><li id="Q_26_0"><input type="radio" id="Q_26_0_Btn" onclick="CheckMCAnswer(26,0,this)">Particles of rock</li><li id="Q_26_1"><input type="radio" id="Q_26_1_Btn" onclick="CheckMCAnswer(26,1,this)">Ice of Methene</li><li id="Q_26_2"><input type="radio" id="Q_26_2_Btn" onclick="CheckMCAnswer(26,2,this)">Particles of water ice</li><li id="Q_26_3"><input type="radio" id="Q_26_3_Btn" onclick="CheckMCAnswer(26,3,this)">Debris of satellites</li></ol></li>
+<li class="QuizQuestion" id="Q_27" style="display: none;"><div class="QuestionText">Who invented the astronomical telescope?</div><ol class="MCAnswers"><li id="Q_27_0"><input type="radio" id="Q_27_0_Btn" onclick="CheckMCAnswer(27,0,this)">Galileo Galilei</li><li id="Q_27_1"><input type="radio" id="Q_27_1_Btn" onclick="CheckMCAnswer(27,1,this)">Nicolaus Copernicus</li><li id="Q_27_2"><input type="radio" id="Q_27_2_Btn" onclick="CheckMCAnswer(27,2,this)">Johannes Kepler</li><li id="Q_27_3"><input type="radio" id="Q_27_3_Btn" onclick="CheckMCAnswer(27,3,this)">Ptolemy</li></ol></li>
+<li class="QuizQuestion" id="Q_28" style="display: none;"><div class="QuestionText">What is the brightest star in the night sky seen from a naked eye?</div><ol class="MCAnswers"><li id="Q_28_0"><input type="radio" id="Q_28_0_Btn" onclick="CheckMCAnswer(28,0,this)">Pole Star</li><li id="Q_28_1"><input type="radio" id="Q_28_1_Btn" onclick="CheckMCAnswer(28,1,this)">Sirius A</li><li id="Q_28_2"><input type="radio" id="Q_28_2_Btn" onclick="CheckMCAnswer(28,2,this)">Proxima Centauri</li><li id="Q_28_3"><input type="radio" id="Q_28_3_Btn" onclick="CheckMCAnswer(28,3,this)">Vega</li></ol></li>
+<li class="QuizQuestion" id="Q_29" style="display: none;"><div class="QuestionText">Which planet is known "morning star" ?</div><ol class="MCAnswers"><li id="Q_29_0"><input type="radio" id="Q_29_0_Btn" onclick="CheckMCAnswer(29,0,this)">Venus</li><li id="Q_29_1"><input type="radio" id="Q_29_1_Btn" onclick="CheckMCAnswer(29,1,this)">Mars</li><li id="Q_29_2"><input type="radio" id="Q_29_2_Btn" onclick="CheckMCAnswer(29,2,this)">Jupiter</li><li id="Q_29_3"><input type="radio" id="Q_29_3_Btn" onclick="CheckMCAnswer(29,3,this)">Saturn</li></ol></li>
+<li class="QuizQuestion" id="Q_30" style="display: none;"><div class="QuestionText">If you were standing on the moon, what color would the sky be?</div><ol class="MCAnswers"><li id="Q_30_0"><input type="radio" id="Q_30_0_Btn" onclick="CheckMCAnswer(30,0,this)">Sky blue</li><li id="Q_30_1"><input type="radio" id="Q_30_1_Btn" onclick="CheckMCAnswer(30,1,this)">Yellow</li><li id="Q_30_2"><input type="radio" id="Q_30_2_Btn" onclick="CheckMCAnswer(30,2,this)">Red</li><li id="Q_30_3"><input type="radio" id="Q_30_3_Btn" onclick="CheckMCAnswer(30,3,this)">Black</li></ol></li>
+<li class="QuizQuestion" id="Q_31" style="display: none;"><div class="QuestionText">Which planet is called the Red Planet?</div><ol class="MCAnswers"><li id="Q_31_0"><input type="radio" id="Q_31_0_Btn" onclick="CheckMCAnswer(31,0,this)">Mars</li><li id="Q_31_1"><input type="radio" id="Q_31_1_Btn" onclick="CheckMCAnswer(31,1,this)">Venus</li><li id="Q_31_2"><input type="radio" id="Q_31_2_Btn" onclick="CheckMCAnswer(31,2,this)">Mercury</li><li id="Q_31_3"><input type="radio" id="Q_31_3_Btn" onclick="CheckMCAnswer(31,3,this)">Neptune</li></ol></li>
+<li class="QuizQuestion" id="Q_32" style="display: none;"><div class="QuestionText">What is the planet closest to the sun?</div><ol class="MCAnswers"><li id="Q_32_0"><input type="radio" id="Q_32_0_Btn" onclick="CheckMCAnswer(32,0,this)">Mercury</li><li id="Q_32_1"><input type="radio" id="Q_32_1_Btn" onclick="CheckMCAnswer(32,1,this)">Earth</li><li id="Q_32_2"><input type="radio" id="Q_32_2_Btn" onclick="CheckMCAnswer(32,2,this)">Mars</li><li id="Q_32_3"><input type="radio" id="Q_32_3_Btn" onclick="CheckMCAnswer(32,3,this)">Venus</li></ol></li>
+<li class="QuizQuestion" id="Q_33" style="display: none;"><div class="QuestionText">Saturn is the second largest planet in our solar system. Why is it famous for?</div><ol class="MCAnswers"><li id="Q_33_0"><input type="radio" id="Q_33_0_Btn" onclick="CheckMCAnswer(33,0,this)">Beautiful rainbow</li><li id="Q_33_1"><input type="radio" id="Q_33_1_Btn" onclick="CheckMCAnswer(33,1,this)">Beautiful ring</li><li id="Q_33_2"><input type="radio" id="Q_33_2_Btn" onclick="CheckMCAnswer(33,2,this)">Water</li><li id="Q_33_3"><input type="radio" id="Q_33_3_Btn" onclick="CheckMCAnswer(33,3,this)">Diamonds</li></ol></li>
+<li class="QuizQuestion" id="Q_34" style="display: none;"><div class="QuestionText">What do we call scientists who focus on observations of the skies?</div><ol class="MCAnswers"><li id="Q_34_0"><input type="radio" id="Q_34_0_Btn" onclick="CheckMCAnswer(34,0,this)">Astronauts</li><li id="Q_34_1"><input type="radio" id="Q_34_1_Btn" onclick="CheckMCAnswer(34,1,this)">Astronomers</li><li id="Q_34_2"><input type="radio" id="Q_34_2_Btn" onclick="CheckMCAnswer(34,2,this)">Physicists</li><li id="Q_34_3"><input type="radio" id="Q_34_3_Btn" onclick="CheckMCAnswer(34,3,this)">Mathamatician</li></ol></li>
+<li class="QuizQuestion" id="Q_35" style="display: none;"><div class="QuestionText">What is the highest mountain on Mars?</div><ol class="MCAnswers"><li id="Q_35_0"><input type="radio" id="Q_35_0_Btn" onclick="CheckMCAnswer(35,0,this)">Olympus Mons</li><li id="Q_35_1"><input type="radio" id="Q_35_1_Btn" onclick="CheckMCAnswer(35,1,this)">Ascraeus Mons</li><li id="Q_35_2"><input type="radio" id="Q_35_2_Btn" onclick="CheckMCAnswer(35,2,this)">Mons Ardeshir</li><li id="Q_35_3"><input type="radio" id="Q_35_3_Btn" onclick="CheckMCAnswer(35,3,this)">Mons Blanc</li></ol></li>
+<li class="QuizQuestion" id="Q_36" style="display: none;"><div class="QuestionText"> Which one of these is the brightest nebula in the sky?</div><ol class="MCAnswers"><li id="Q_36_0"><input type="radio" id="Q_36_0_Btn" onclick="CheckMCAnswer(36,0,this)">Eagle Nebula</li><li id="Q_36_1"><input type="radio" id="Q_36_1_Btn" onclick="CheckMCAnswer(36,1,this)">Eta Carinae Nebula</li><li id="Q_36_2"><input type="radio" id="Q_36_2_Btn" onclick="CheckMCAnswer(36,2,this)">Orion Nebula</li><li id="Q_36_3"><input type="radio" id="Q_36_3_Btn" onclick="CheckMCAnswer(36,3,this)">Dumbbell Nebula</li></ol></li>
+<li class="QuizQuestion" id="Q_37" style="display: none;"><div class="QuestionText">Which one is the The Great Red Spot of Jupiter?</div><ol class="MCAnswers"><li id="Q_37_0"><input type="radio" id="Q_37_0_Btn" onclick="CheckMCAnswer(37,0,this)"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMJixMFMZimVVJFNtqs69WomzRqcsoZ4iERQ&usqp=CAU" width="100" height="100"/></li><li id="Q_37_1"><input type="radio" id="Q_37_1_Btn" onclick="CheckMCAnswer(37,1,this)"><img src="https://www.sciencealert.com/images/2020-06/saturn-hexagon-false-colour.jpg" width="100" height="100"/></li><li id="Q_37_2"><input type="radio" id="Q_37_2_Btn" onclick="CheckMCAnswer(37,2,this)"><img src="https://www.universetoday.com/wp-content/uploads/2010/01/Io_Feat-e1433786196804.jpg" width="100" height="100"/></li><li id="Q_37_3"><input type="radio" id="Q_37_3_Btn" onclick="CheckMCAnswer(37,3,this)"><img src="https://www.scienceabc.com/wp-content/uploads/2019/08/3d-rendered-illustration-of-the-mars-olympus-mons-Illustration-Sebastian-KaulitzkiS.jpg" width="100" height="100"/></li></ol></li>
+<li class="QuizQuestion" id="Q_38" style="display: none;"><div class="QuestionText">Astrophysicists sometimes study the temperature of stars. Which of these stars would be the hottest?</div><ol class="MCAnswers"><li id="Q_38_0"><input type="radio" id="Q_38_0_Btn" onclick="CheckMCAnswer(38,0,this)">Red</li><li id="Q_38_1"><input type="radio" id="Q_38_1_Btn" onclick="CheckMCAnswer(38,1,this)">Yellow</li><li id="Q_38_2"><input type="radio" id="Q_38_2_Btn" onclick="CheckMCAnswer(38,2,this)">Blue</li><li id="Q_38_3"><input type="radio" id="Q_38_3_Btn" onclick="CheckMCAnswer(38,3,this)">White</li></ol></li>
+<li class="QuizQuestion" id="Q_39" style="display: none;"><div class="QuestionText">What is a nebula?</div><ol class="MCAnswers"><li id="Q_39_0"><input type="radio" id="Q_39_0_Btn" onclick="CheckMCAnswer(39,0,this)">A cloud of gas and dust</li><li id="Q_39_1"><input type="radio" id="Q_39_1_Btn" onclick="CheckMCAnswer(39,1,this)">Collection of planets</li><li id="Q_39_2"><input type="radio" id="Q_39_2_Btn" onclick="CheckMCAnswer(39,2,this)">A cloud of water and methene ice</li><li id="Q_39_3"><input type="radio" id="Q_39_3_Btn" onclick="CheckMCAnswer(39,3,this)">Collection of Stars</li></ol></li>
+<li class="QuizQuestion" id="Q_40" style="display: none;"><div class="QuestionText">For how many days of the year in Pune the Sun is exactly overhead casting no shadows <br /></div><ol class="MCAnswers"><li id="Q_40_0"><input type="radio" id="Q_40_0_Btn" onclick="CheckMCAnswer(40,0,this)">2 days</li><li id="Q_40_1"><input type="radio" id="Q_40_1_Btn" onclick="CheckMCAnswer(40,1,this)">7 days</li><li id="Q_40_2"><input type="radio" id="Q_40_2_Btn" onclick="CheckMCAnswer(40,2,this)">1 day</li><li id="Q_40_3"><input type="radio" id="Q_40_3_Btn" onclick="CheckMCAnswer(40,3,this)">3 days</li></ol></li>
+<li class="QuizQuestion" id="Q_41" style="display: none;"><div class="QuestionText">On which planet humans can never land because there is no land surface?<br /></div><ol class="MCAnswers"><li id="Q_41_0"><input type="radio" id="Q_41_0_Btn" onclick="CheckMCAnswer(41,0,this)">Mars</li><li id="Q_41_1"><input type="radio" id="Q_41_1_Btn" onclick="CheckMCAnswer(41,1,this)">Jupiter</li><li id="Q_41_2"><input type="radio" id="Q_41_2_Btn" onclick="CheckMCAnswer(41,2,this)">Mercury</li><li id="Q_41_3"><input type="radio" id="Q_41_3_Btn" onclick="CheckMCAnswer(41,3,this)">Venus</li></ol></li>
+<li class="QuizQuestion" id="Q_42" style="display: none;"><div class="QuestionText">What is the maximum number of earth you can fit inside a sun?</div><ol class="MCAnswers"><li id="Q_42_0"><input type="radio" id="Q_42_0_Btn" onclick="CheckMCAnswer(42,0,this)">10</li><li id="Q_42_1"><input type="radio" id="Q_42_1_Btn" onclick="CheckMCAnswer(42,1,this)">10 thousand</li><li id="Q_42_2"><input type="radio" id="Q_42_2_Btn" onclick="CheckMCAnswer(42,2,this)">1 million</li><li id="Q_42_3"><input type="radio" id="Q_42_3_Btn" onclick="CheckMCAnswer(42,3,this)">10 million</li></ol></li>
+<li class="QuizQuestion" id="Q_43" style="display: none;"><div class="QuestionText">If you put two prisms together and pass sunlight through it, in how many ways does the light gets split into?</div><ol class="MCAnswers"><li id="Q_43_0"><input type="radio" id="Q_43_0_Btn" onclick="CheckMCAnswer(43,0,this)">0</li><li id="Q_43_1"><input type="radio" id="Q_43_1_Btn" onclick="CheckMCAnswer(43,1,this)">Not countable</li><li id="Q_43_2"><input type="radio" id="Q_43_2_Btn" onclick="CheckMCAnswer(43,2,this)">8</li><li id="Q_43_3"><input type="radio" id="Q_43_3_Btn" onclick="CheckMCAnswer(43,3,this)">14</li></ol></li>
+<li class="QuizQuestion" id="Q_44" style="display: none;"><div class="QuestionText">Does the moon rise on Amavasya (New Moon)?<br /></div><ol class="MCAnswers"><li id="Q_44_0"><input type="radio" id="Q_44_0_Btn" onclick="CheckMCAnswer(44,0,this)">Yes</li><li id="Q_44_1"><input type="radio" id="Q_44_1_Btn" onclick="CheckMCAnswer(44,1,this)">No</li></ol></li>
+<li class="QuizQuestion" id="Q_45" style="display: none;"><div class="QuestionText">Will you weigh the same in the Northern hemisphere and southern hemisphere?<br /></div><ol class="MCAnswers"><li id="Q_45_0"><input type="radio" id="Q_45_0_Btn" onclick="CheckMCAnswer(45,0,this)">Yes</li><li id="Q_45_1"><input type="radio" id="Q_45_1_Btn" onclick="CheckMCAnswer(45,1,this)">No</li></ol></li>
+<li class="QuizQuestion" id="Q_46" style="display: none;"><div class="QuestionText">Which spacecraft has gone outside the solar system?<br /></div><ol class="MCAnswers"><li id="Q_46_0"><input type="radio" id="Q_46_0_Btn" onclick="CheckMCAnswer(46,0,this)">Cassini</li><li id="Q_46_1"><input type="radio" id="Q_46_1_Btn" onclick="CheckMCAnswer(46,1,this)">Voyager</li><li id="Q_46_2"><input type="radio" id="Q_46_2_Btn" onclick="CheckMCAnswer(46,2,this)">Juno</li><li id="Q_46_3"><input type="radio" id="Q_46_3_Btn" onclick="CheckMCAnswer(46,3,this)">New Horizon</li></ol></li>
+<li class="QuizQuestion" id="Q_47" style="display: none;"><div class="QuestionText">Which spacecraft has landed on a comet?<br /></div><ol class="MCAnswers"><li id="Q_47_0"><input type="radio" id="Q_47_0_Btn" onclick="CheckMCAnswer(47,0,this)">Rosetta</li><li id="Q_47_1"><input type="radio" id="Q_47_1_Btn" onclick="CheckMCAnswer(47,1,this)">Cassini</li><li id="Q_47_2"><input type="radio" id="Q_47_2_Btn" onclick="CheckMCAnswer(47,2,this)">Juno</li><li id="Q_47_3"><input type="radio" id="Q_47_3_Btn" onclick="CheckMCAnswer(47,3,this)">New Horizon</li></ol></li>
+<li class="QuizQuestion" id="Q_48" style="display: none;"><div class="QuestionText">Which planet has the most moon?<br /></div><ol class="MCAnswers"><li id="Q_48_0"><input type="radio" id="Q_48_0_Btn" onclick="CheckMCAnswer(48,0,this)">Jupiter</li><li id="Q_48_1"><input type="radio" id="Q_48_1_Btn" onclick="CheckMCAnswer(48,1,this)">Saturn</li><li id="Q_48_2"><input type="radio" id="Q_48_2_Btn" onclick="CheckMCAnswer(48,2,this)">Uranus</li><li id="Q_48_3"><input type="radio" id="Q_48_3_Btn" onclick="CheckMCAnswer(48,3,this)">Neptune</li></ol></li>
+<li class="QuizQuestion" id="Q_49" style="display: none;"><div class="QuestionText">What is the biggest moon in the solar system?<br /></div><ol class="MCAnswers"><li id="Q_49_0"><input type="radio" id="Q_49_0_Btn" onclick="CheckMCAnswer(49,0,this)">Ganymede</li><li id="Q_49_1"><input type="radio" id="Q_49_1_Btn" onclick="CheckMCAnswer(49,1,this)">Io</li><li id="Q_49_2"><input type="radio" id="Q_49_2_Btn" onclick="CheckMCAnswer(49,2,this)">Juno</li><li id="Q_49_3"><input type="radio" id="Q_49_3_Btn" onclick="CheckMCAnswer(49,3,this)">Titan</li></ol></li></ol>
+
+
+</div>
+
+</div>
+
+<div class="Feedback" id="FeedbackDiv">
+<div class="FeedbackText" id="FeedbackContent"></div>
+<button id="FeedbackOKButton" class="FuncButton" onclick="HideFeedback(); return false;">&#160;Continue&#160;</button>
+</div>
+</div>
+
+<div class="TimeOutback" id="TimeOutDiv">
+<div class="TimeOutText" id="TimeOutContent"></div>
+<button id="TimeOutButton" class="FuncButton" onclick="SubmitQuiz(); return false;">&#160;OK&#160;</button>
+</div>
+</div>
+
+<!-- BeginBottomNavButtons -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+
+        $("#formABC").submit(function (e) {
+
+            //stop submitting the form to see the disabled button effect
+            e.preventDefault();
+
+            //disable the submit button
+            $("#SubmitQuizButton").attr("disabled", true);
+
+            //disable a normal button
+            return true;
+
+        });
+    });
+</script>
+
+<div class="NavButtonBar" id="BottomNavBar">
+
+<form id="formABC" action="SubmitQuiz(); return false;" method="POST">
+    <input type="submit" id="SubmitQuizButton" value="Submit" onclick="SubmitQuiz(); return false;">&#160;&#160;</input>
+</form>
+
+
+</div>
+
+
+
+<!-- EndBottomNavButtons -->
+
+<!-- BeginSubmissionForm -->
+
+<!-- EndSubmissionForm -->
+
+</body>
+
+</html>
